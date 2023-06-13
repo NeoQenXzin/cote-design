@@ -2,7 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
-import logoDark from '../../../public/assets/logos/logoDark.png'
+import logoDark from '../../../public/assets/logos/logoLight.png'
+import style from './Navbar.module.css'
 
 export default function Navbar() {
     return (<>
@@ -18,12 +19,12 @@ export default function Navbar() {
                 crossOrigin="anonymous"
             />
         </Head>
-        <div className=''>
-            <nav className='navbar navbar-dark bg-primary'>
-                <Link className='navbar-brand mx-4' href={'/'}>
-                     <Image src={logoDark} width="450" height="100"/>
-                        </Link>
+        <div className={style.navbar}>
+            <nav className='navbar navbar-dark bg-dark'>
                 <div className="container-fluid justify-content-center">
+                <Link className='navbar-brand mx-4' href={'/'}>
+                     <Image src={logoDark} width="150" height="60"/>
+                        </Link>
 
                     <Link className='navbar-brand mx-4' href={'/accueil'}>
                         Accueil

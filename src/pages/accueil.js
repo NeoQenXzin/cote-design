@@ -4,7 +4,7 @@ import Image from 'next/image'
 import logo from '../../public/assets/logos/logoLight.png'
 import logo2 from '../../public/assets/logos/logoDark.png'
 import styles from '@/styles/Accueil.module.css'
-import Navbar from '@/Component/Navbar/Navbar'
+
 
 export default function acceuil() {
   return (
@@ -15,11 +15,12 @@ export default function acceuil() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+        
       <main className={styles.main}>
-        <Navbar/>
         <Image  src={logo} width="450" height="100"/>
         <Image  src={logo2} width="450" height="100"/>
       </main>
+       
     </>
   )
 }
