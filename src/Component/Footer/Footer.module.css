@@ -1,5 +1,15 @@
 .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Oswald, sans-serif;
+    flex-direction: column;
     height: 200px;
-    background-color: crimson;
-    color: whitesmoke;
+    padding: 72px;
+    background-color: #0e182d;
+    color: #fefefe;
+}
+.footer p{
+    margin: 10px 0;
+    font-size: 14px;
 }

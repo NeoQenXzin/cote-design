@@ -17,8 +17,8 @@ export default function acceuil() {
       </Head>
         
       <main className={styles.main}>
-        <Image  src={logo} width="450" height="100"/>
-        <Image  src={logo2} width="450" height="100"/>
+        <h1>Version du site</h1>
+        <p>Ceci est un test pour savoir si le changement de langue du site fonctionne.</p>
       </main>
        
     </>

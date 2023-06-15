@@ -32,7 +32,7 @@ export default function Home() {
                 </Link>
               </div>
               <div className="flag-english">
-              <Link className='navbar-brand mx-4' href={'/'}>
+              <Link className='navbar-brand mx-4' href={'/accueil'}>
                 <Image src={flagEng} width="60" height="40" />
                 <br></br> English
                     </Link>
