@@ -1,0 +1,13 @@
+{
+    "menu": {
+        "accueil": "Accueil",
+        "services": "Services",
+        "contact": "Contact"
+    },
+    "accueil": {
+        "version": "Version Française",
+        "prez": "Bienvenu au test de traduction",
+        "prez2": "Ceci est un test de traduction d'une page de notre application. Vous avez 2 choix: Anglais ou Français .",
+        "thanks": "Merci ! :)"
+    }
+}

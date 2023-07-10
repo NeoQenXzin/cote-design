@@ -1,0 +1,13 @@
+{
+    "menu": {
+        "accueil": "Home",
+        "services": "Eservices",
+        "contact": "contact us"
+    },
+    "accueil": {
+        "version": "English Version",
+        "prez": "Welcome to the translation test",
+        "prez2": "This is a test for translation one page of our apps. You have two choice : English or French .",
+        "thanks": "Thank you ! :)"
+    }
+}

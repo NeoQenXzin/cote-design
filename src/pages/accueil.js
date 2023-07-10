@@ -4,9 +4,12 @@ import Image from 'next/image'
 import logo from '../../public/assets/logos/logoLight.png'
 import logo2 from '../../public/assets/logos/logoDark.png'
 import styles from '@/styles/Accueil.module.css'
+import { useTranslation } from 'react-i18next';
 
-
-export default function acceuil() {
+  
+  export default function accueil(props) {
+   
+  const { t } = useTranslation();
   return (
     <>
      <Head>
@@ -17,8 +20,10 @@ export default function acceuil() {
       </Head>
         
       <main className={styles.main}>
-        <h1>Version du site</h1>
-        <p>Ceci est un test pour savoir si le changement de langue du site fonctionne.</p>
+        <h1>{t ("accueil.version")}</h1>
+        <p>{t ("accueil.prez")}</p>
+        <p>{t ("accueil.prez2")}</p>
+        <p>{t ("accueil.thanks")}</p>
       </main>
        
     </>

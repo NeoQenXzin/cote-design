@@ -6,11 +6,20 @@ import flagFr from '../../public/assets/icones/flag-fr.gif'
 import flagEng from '../../public/assets/icones/flag-eng.gif'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import { useTranslation } from 'react-i18next';
 
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home(props) {
+ 
+  const { t , i18n} = useTranslation();
+ const setLocaleEn = () => {
+  i18n.changeLanguage('en')
+ }
+ const setLocaleFr = () => {
+  i18n.changeLanguage('fr')
+ }
   return (
     <>
       <Head>
@@ -26,13 +35,13 @@ export default function Home() {
             <div className={styles.textLogo}>ARCHITECTURE & MISE EN OEUVRE</div>
             <div className={styles.flagContainer}>
               <div className="flag-french">
-                <Link href={'accueil'}>
+                <Link href={'accueil'} onClick={setLocaleFr}>
                   <Image src={flagFr} width="60" height="40" />
                   <br></br> Français
                 </Link>
               </div>
               <div className="flag-english">
-              <Link className='navbar-brand mx-4' href={'/accueil'}>
+              <Link className='navbar-brand mx-4' href={'/accueil'} onClick={setLocaleEn}>
                 <Image src={flagEng} width="60" height="40" />
                 <br></br> English
                     </Link>
