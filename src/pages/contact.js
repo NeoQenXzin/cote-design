@@ -67,21 +67,21 @@ export default function Contact() {
         if (!nameRegex.test(nom)) {
             isValid = false;
             errors.nom = 'Le nom est invalide.';
-            console.log('Le nom est invalide.');
+            // console.log('Le nom est invalide.');
         }
         
         // Validation du prénom
         if (!nameRegex.test(prenom)) {
             isValid = false;
             errors.prenom = 'Le prenom est invalide.';
-            console.log('Le prénom est invalide.');
+            // console.log('Le prénom est invalide.');
         }
         
         // Validation de l'e-mail
         if (!emailRegex.test(email) || email.length > 50) {
             isValid = false;
             errors.email = "L' email est invalide.";
-            console.log('L\'e-mail est invalide.');
+            // console.log('L\'e-mail est invalide.');
         }
         
         // Validation du message
@@ -89,7 +89,7 @@ export default function Contact() {
         if (message.length < 5 || !isSafeMessage) {
             isValid = false;
             errors.message = 'Le message est invalide.';
-            console.log('Le message est invalide.');
+            // console.log('Le message est invalide.');
         }
         setFormErrors(errors);
         return isValid;

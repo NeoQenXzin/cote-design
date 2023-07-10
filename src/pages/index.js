@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import img1 from '../../public/assets/logos/logo-accueil.jpeg'
@@ -11,15 +12,43 @@ import { useTranslation } from 'react-i18next';
 
 const inter = Inter({ subsets: ['latin'] })
 
+
 export default function Home(props) {
- 
-  const { t , i18n} = useTranslation();
- const setLocaleEn = () => {
-  i18n.changeLanguage('en')
- }
- const setLocaleFr = () => {
-  i18n.changeLanguage('fr')
- }
+
+// Translation library
+  const { t, i18n } = useTranslation('en');
+  const setLocaleEn = () => {
+    i18n.changeLanguage('en')
+  }
+  const setLocaleFr = () => {
+    i18n.changeLanguage('fr')
+  }
+
+  // Diaporama Background 
+  const backgroundImages = [
+    'assets/img/backgroundHome/img0.jpeg',
+    'assets/img/backgroundHome/img1.jpeg',
+    'assets/img/backgroundHome/img2.jpeg',
+    'assets/img/backgroundHome/img3.jpeg',
+    // Ajoutez d'autres URL d'images ici
+  ];
+  
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const backgroundImageStyle = {
+    backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
+  };
+
+
+
+
   return (
     <>
       <Head>
@@ -31,25 +60,35 @@ export default function Home(props) {
       <main className={styles.main}>
         <div className={styles.logoContainer}>
           <div className={styles.logo}>
-            <div className="logo"><Image src={img1} width="450" height="100" /></div>
+            <div className="logo"><Image src={img1} width="350" height="70" /></div>
             <div className={styles.textLogo}>ARCHITECTURE & MISE EN OEUVRE</div>
+            <div className={styles.textAdress}>
+              <p>4 rue Gambetta 06560 Valbonne</p>
+            </div>
+
             <div className={styles.flagContainer}>
               <div className="flag-french">
                 <Link href={'accueil'} onClick={setLocaleFr}>
-                  <Image src={flagFr} width="60" height="40" />
-                  <br></br> Français
+                  <Image src={flagFr} width="50" height="35" />
+                  <br></br><span> Français</span>
                 </Link>
               </div>
               <div className="flag-english">
-              <Link className='navbar-brand mx-4' href={'/accueil'} onClick={setLocaleEn}>
-                <Image src={flagEng} width="60" height="40" />
-                <br></br> English
-                    </Link>
+                <Link className='navbar-brand mx-4' href={'/accueil'} onClick={setLocaleEn}>
+                  <Image src={flagEng} width="50" height="35" />
+                  <br></br><span> English</span>
+                </Link>
               </div>
             </div>
           </div>
         </div>
         <h1>Bienvenue sur coté Design</h1>
+
+        {/* Background diaporama  */}
+        <section className={styles.backgroundSection}>
+          <div className={styles.backgroundImage} style={backgroundImageStyle}></div>
+        </section>
+
       </main>
     </>
   )

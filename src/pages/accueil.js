@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
   
   export default function accueil(props) {
    
-  const { t } = useTranslation();
+  const { t } = useTranslation('en');
   return (
     <>
      <Head>
