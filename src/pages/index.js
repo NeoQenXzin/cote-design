@@ -60,7 +60,7 @@ export default function Home(props) {
       <main className={styles.main}>
         <div className={styles.logoContainer}>
           <div className={styles.logo}>
-            <div className="logo"><Image src={img1} width="350" height="70" /></div>
+            <div className="logo"><Image className={styles.logoImg} src={img1}/></div>
             <div className={styles.textLogo}>ARCHITECTURE & MISE EN OEUVRE</div>
             <div className={styles.textAdress}>
               <p>4 rue Gambetta 06560 Valbonne</p>

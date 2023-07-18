@@ -1,4 +1,195 @@
 .main{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     min-height: 100vh;
 }
+
+.mainSection{
+    height: 100vh;
+    position: relative;
+}
+.buttonExplore{
+position: absolute;
+bottom: 50px;
+left: 50%;
+z-index: 10;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+background: transparent;
+border: none;
+color: #fff;
+font-size: 14px;
+gap: 10px;
+}
+.buttonExplore:focus{
+    border: none;
+    outline: none;
+}
+.buttonExploreImg{
+    width: 40px;
+    height: 40px;
+}
+.buttonExplore span{
+    display: inline-block;
+}
+
+
+.videoBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* section presentation */
+  .prezSection{
+    padding: 50px;
+    background-color: #F6EEE3;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+  }
+  .prezText, .containerPrezImg {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .prezText{
+    flex-direction: column;
+  }
+  .prezImg{
+    padding: 50px;
+    padding-right: 25%;
+    object-fit: contain;
+  }
+  .prezContent{
+    letter-spacing: 0.02em;
+    display: inline-block;
+  }
+
+  .prezButton {
+    margin-left: 20px;
+    display: block;
+    margin-top: 30px;
+    box-sizing: border-box;
+    padding: 20px 45px;
+    position: relative;
+    color: white;
+    background: none;
+    text-transform: uppercase;
+    border: 1px solid currentColor;
+  }
+  .prezButton::before {
+    content: "";
+    /* z-index: -1; */
+    position: absolute;
+    inset: 0;
+    background: white;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 100% 100%);
+    transition: clip-path 0.2s;
+  }
+  
+  .prezButton:hover::before {
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+  }
+  
+  
+    .prezButton .textContainer {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+    .prezButton .text {
+      display: block;
+      position: relative;
+      font-weight: 500;
+      mix-blend-mode: difference;
+      color: #333;
+    }
+    
+    .prezButton:hover .text {
+      animation: move-up-alternate 0.3s forwards;
+      will-change: transform;
+      color: #999999;
+    }
+  
+    @keyframes move-up-alternate {
+      from {
+        transform: translateY(0%);
+      }
+      50% {
+        transform: translateY(80%);
+      }
+      51% {
+        transform: translateY(-80%);
+      }
+      100% {
+        transform: translateY(0%);
+      }
+    }
+  
+
+    /* Section Accordeon */
+    .accordeon{
+        padding-top: 50px;
+        min-height: 400px;
+    }
+    /* .accordeon .close {
+        display: none;
+      }
+      .accordeon .open {
+        display: block;
+        background: #f6f6f6;
+      } */
+      .accordeon li {
+        text-decoration: none;
+        list-style: none;
+        margin-bottom: 55px;
+      }
+      .accordeon h2 {
+        background: #0e182d;
+        border-radius: 5px;
+        height: 47px;
+        display: flex;
+        margin-bottom: 31px;
+        align-items: center;
+        position: relative;
+        width: 90%;
+        color: #fff;
+        position: relative;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        padding-left: 18px;
+        margin: auto;
+      }
+      .accordeon h2 span {
+        position: absolute;
+        right: 15px;
+        width: 25px;
+        height: 25px;
+        background: url("../../public/assets/icones/Vector.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      /* .accordeon li .open {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        color: #ff6060;
+        padding-left: 20px;
+        width: 90%;
+        text-align: left;
+        margin: auto;
+        padding-top: 27px;
+        padding-bottom: 35px;
+        border-radius: 0 0 10px 10px;
+      } */

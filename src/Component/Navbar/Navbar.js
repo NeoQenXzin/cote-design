@@ -14,7 +14,7 @@ export default function Navbar(props) {
     const handleLangChange = (e) => {
         i18n.changeLanguage(e.target.value)
     }
-// console.log(i18n.language);
+    // console.log(i18n.language);
     const [isNavOpen, setIsNavOpen] = useState(false);
 
     const toggleNav = () => {
@@ -49,7 +49,8 @@ export default function Navbar(props) {
                 />
             </Head>
             <div className={style.navbar}>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav className="navbar navbar-expand-lg">
+                {/* <nav className="navbar navbar-expand-lg navbar-dark bg-dark"> */}
                     <div className="container-fluid">
                         <Link href={'/'} className="navbar-brand mx-4">
                             <Image src={logoDark} width="150" height="60" />
@@ -63,7 +64,7 @@ export default function Navbar(props) {
                             <span className="navbar-toggler-icon" />
                         </button>
                         <div className={`navbar-collapse ${isNavOpen ? 'show' : ''}`}>
-                            <ul className={`navbar-nav ms-auto ${isNavOpen ? 'd-flex flex-column align-items-center' : ''}`}>
+                            <ul className={`${style.SMN_effect-62} navbar-nav ms-auto ${isNavOpen ? 'd-flex flex-column align-items-center' : ''}`}>
                                 <li className="nav-item">
                                     <Link href={'/accueil'} className="nav-link mx-4">{t('menu.accueil')}</Link>
                                 </li>
@@ -84,11 +85,11 @@ export default function Navbar(props) {
                     </div>
                 </nav>
             </div>
-            <style jsx>{`
-        @media (max-width: 991px) {
-          .navbar-collapse:not(.show) {
-            display: none !important;
+            <style jsx>{` @media (max-width: 991px) {
+                            .navbar-collapse:not(.show) {
+                                display: none !important;
           }
+        }
         }
       `}</style>
         </>

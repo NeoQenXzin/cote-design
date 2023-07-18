@@ -1,7 +1,65 @@
 .navbar{
+    z-index: 10;
     height: 110px;
-    background: #000 !important;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.162) !important;
+    position: fixed;
+    top:0;
+    left:0;
+
 }
 .navbar a{
+    z-index: 10;
    color:antiquewhite;
 }
+
+.navbar a:hover{
+    mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .2) 30%, #000 50%, rgba(0, 0, 0, .2) 70%);
+    mask-size: 200%;
+    animation: shine 3s infinite;
+    transition: .4s;
+}
+@keyframes shine {
+	from {
+		mask-position: 150%;
+	}
+	to {
+		mask-position: -50%;
+	}
+}
+
+/* effect hover  */
+/* .SMN_effect-62 a:hover {
+    color: red;
+	-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .2) 30%, #000 50%, rgba(0, 0, 0, .2) 70%);
+	-webkit-mask-size: 200%;
+	animation: shine 2s infinite;
+	transition: 0.35s;
+} */
+
+@-webkit-keyframes shine {
+	from {
+		-webkit-mask-position: 150%;
+	}
+	to {
+		-webkit-mask-position: -50%;
+	}
+}
+
+
+/* Media querries */
+
+
+@media (max-width: 1531px) {
+  
+  }
+  @media (max-width: 1531px) and (min-width:480px) {
+   
+  }
+  @media (max-width: 768px) {
+   
+  }
+  
+  @media (max-width: 480px) {
+    
+  }

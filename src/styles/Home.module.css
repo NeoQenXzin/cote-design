@@ -9,6 +9,7 @@
 }
 .main h1{
   color: transparent;
+  /* color: red; */
 }
 
 .logoContainer{
@@ -19,7 +20,7 @@
   padding: 20px;
   border: double 5px #0e182d;
   border-radius: 10px;
-  background: #FFF;
+  background: rgba(255, 255, 255, 0.93);
 }
 
 .logo{
@@ -30,6 +31,12 @@
   padding: 20px;
   gap: 15px;
 }
+
+.logoImg{
+  width: 350px;
+  height: 80px;
+}
+
 .textLogo{
   color: #7f7f7f;
   font-size: 22px;
@@ -101,3 +108,53 @@
     opacity: 0;
   }
 }
+
+
+/* Media querries */
+
+
+@media (max-width: 1531px) {
+  .logoContainer {
+    justify-content: center;
+    transform:none;
+  }
+
+}
+@media (max-width: 1531px) and (min-width:480px) {
+  .main{
+    
+    align-items:flex-start;
+    padding-left: 30px;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .logoContainer {
+    transform: none;
+    /* width: 80%; */
+  }
+}
+
+@media (max-width: 480px) {
+  .main{
+    align-items:center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .textLogo {
+    font-size: 16px;
+  }
+
+  .textAdress {
+    font-size: 10px;
+  }
+
+  .logoImg{
+    width: 200px;
+    height: 60px;
+  }
+}
+
+
+
