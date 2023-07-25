@@ -9,9 +9,15 @@
         "prezSectionText2": "l'agence d'architecture d'intérieur Cote Design est spécialisée dans la conception, ",
         "prezSectionText3": "la transformation et la rénovation d'espaces intérieurs et extérieurs. ",
         "prezSectionButton": "Decouvrir l'agence",
+        "gallerySectionButton": "Voir tout nos projets",
+        "contactSectionButton": "Nous Contacter",
+
         "version": "Version Française",
         "prez": "Bienvenu au test de traduction",
         "prez2": "Ceci est un test de traduction d'une page de notre application. Vous avez 2 choix: Anglais ou Français .",
         "thanks": "Merci ! :)"
+    },
+    "footer": {
+        "text":"Copyright NQX Pro Design"
     }
 }

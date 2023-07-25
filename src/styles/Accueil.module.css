@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
 .main{
     /* background-color: blueviolet; */
     min-height: 100vh;
@@ -18,9 +20,34 @@ flex-direction: column;
 align-items: center;
 background: transparent;
 border: none;
-color: #fff;
-font-size: 14px;
+color: #fffFFF;
+font-size: 20px;
+font-weight: bolder;
+letter-spacing: 2px;
 gap: 10px;
+mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .2) 30%, #000 50%, rgba(0, 0, 0, .2) 70%);
+mask-size: 200%;
+animation: shine 2.5s infinite reverse;
+transition: .3s;
+}
+@keyframes shine {
+from {
+    mask-position: 0%;
+}
+to {
+    mask-position: 110%;
+}
+}
+@-webkit-keyframes shine {
+from {
+    -webkit-mask-position: 0%;
+}
+to {
+    -webkit-mask-position: 110%;
+}
+}
+.buttonExplore:hover{
+    mask: none;
 }
 .buttonExplore:focus{
     border: none;
@@ -46,10 +73,10 @@ gap: 10px;
 
   /* section presentation */
   .prezSection{
-    padding: 50px;
+    padding: 20px;
     background-color: #F6EEE3;
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
   }
   .prezText, .containerPrezImg {
@@ -63,8 +90,9 @@ gap: 10px;
     flex-direction: column;
   }
   .prezImg{
-    padding: 50px;
-    padding-right: 25%;
+    width: 80%;
+    /* padding: 50px; */
+    /* padding-right: 25%; */
     object-fit: contain;
   }
   .prezContent{
@@ -72,72 +100,42 @@ gap: 10px;
     display: inline-block;
   }
 
-  .prezButton {
-    margin-left: 20px;
-    display: block;
-    margin-top: 30px;
-    box-sizing: border-box;
-    padding: 20px 45px;
-    position: relative;
-    color: white;
-    background: none;
-    text-transform: uppercase;
-    border: 1px solid currentColor;
-  }
-  .prezButton::before {
-    content: "";
-    /* z-index: -1; */
-    position: absolute;
-    inset: 0;
-    background: white;
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 100% 100%);
-    transition: clip-path 0.2s;
-  }
-  
-  .prezButton:hover::before {
-    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
-  }
-  
-  
-    .prezButton .textContainer {
-      display: block;
-      position: relative;
-      overflow: hidden;
-    }
-    .prezButton .text {
-      display: block;
-      position: relative;
-      font-weight: 500;
-      mix-blend-mode: difference;
-      color: #333;
-    }
-    
-    .prezButton:hover .text {
-      animation: move-up-alternate 0.3s forwards;
-      will-change: transform;
-      color: #999999;
-    }
-  
-    @keyframes move-up-alternate {
-      from {
-        transform: translateY(0%);
-      }
-      50% {
-        transform: translateY(80%);
-      }
-      51% {
-        transform: translateY(-80%);
-      }
-      100% {
-        transform: translateY(0%);
-      }
-    }
-  
+ .prezSection button{
+    font-family: 'Oswald', serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+ }
 
     /* Section Accordeon */
+
+    .containerAccordeonSection{
+        width: 50%;
+        height: auto;
+        padding: 20px;
+        padding-top: 50px;
+        min-height: 800px;
+        display: flex;
+        justify-content: flex-start;
+        text-align: center;
+       gap: 50px;
+        flex-direction: column;
+        
+    }
+    .containerAccordeonSectionImg{
+        width: 50%;
+        height: 100%;
+        min-height: 800px;
+        background-image: url('../../public/assets/img/section-accordeon-img.jpeg');
+        background-size: cover;
+        background-position: center;
+    }
     .accordeon{
         padding-top: 50px;
-        min-height: 400px;
+        min-height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
     /* .accordeon .close {
         display: none;
@@ -193,3 +191,42 @@ gap: 10px;
         padding-bottom: 35px;
         border-radius: 0 0 10px 10px;
       } */
+
+      /* Section gallery  */
+      .gallerySection {
+        padding: 20px;
+        background-color: #F6EEE3;
+
+      }
+      .gallerySection button{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        font-family: 'Oswald', serif;
+        font-size: 22px;
+        letter-spacing: 2px;
+      }
+      
+      /* Section Contact  */
+      .contactSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        width: 100%;
+      }
+      .contactSection button{
+        border-radius: 4px;
+        border:  2px solid #0e182d;
+        color: #0e182dee;
+        font-family: 'Oswald', serif;
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+      .contactSection button:hover {
+        background-color: #0e182d;
+      }
+      .contactSection button::before:hover{
+        color: #0e182d;
+        background: #0e182d;
+      }

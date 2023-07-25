@@ -1,0 +1,61 @@
+.prezButton {
+    margin-left: 20px;
+    display: block;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 20px 45px;
+    position: relative;
+    color: white;
+    background: none;
+    /* text-transform: uppercase; */
+    border: 1px solid currentColor;
+  }
+  .prezButton::before {
+    content: "";
+    /* z-index: -1; */
+    position: absolute;
+    inset: 0;
+    background: white;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 100% 100%);
+    transition: clip-path 0.2s;
+  }
+  
+  .prezButton:hover::before {
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+  }
+  
+  
+    .prezButton .textContainer {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+    .prezButton .text {
+      display: block;
+      position: relative;
+      font-weight: 500;
+      mix-blend-mode: difference;
+      color: #333;
+    }
+    
+    .prezButton:hover .text {
+      animation: move-up-alternate 0.3s forwards;
+      will-change: transform;
+      color: #999999;
+    }
+  
+    @keyframes move-up-alternate {
+      from {
+        transform: translateY(0%);
+      }
+      50% {
+        transform: translateY(80%);
+      }
+      51% {
+        transform: translateY(-80%);
+      }
+      100% {
+        transform: translateY(0%);
+      }
+    }
+  

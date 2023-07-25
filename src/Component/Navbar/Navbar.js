@@ -11,9 +11,9 @@ import { useTranslation } from "react-i18next"
 export default function Navbar(props) {
     // Destructurer
     const { t, i18n } = useTranslation('en');
-    const handleLangChange = (e) => {
-        i18n.changeLanguage(e.target.value)
-    }
+    // const handleLangChange = (e) => {
+    //     i18n.changeLanguage(e.target.value)
+    // }
     // console.log(i18n.language);
     const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -77,12 +77,12 @@ export default function Navbar(props) {
                             </ul>
                         </div>
                     </div>
-                    <div>
+                    {/* <div>
                         <select onChange={handleLangChange} defaultValue={i18n.language}>
                             <option value='en'>en</option>
                             <option value='fr'>fr</option>
                         </select>
-                    </div>
+                    </div> */}
                 </nav>
             </div>
             <style jsx>{` @media (max-width: 991px) {

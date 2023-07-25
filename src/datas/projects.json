@@ -1,0 +1,270 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "Projet 1",
+        "category": "Architecture d'intérieur",
+        "thumbnail": "/assets/ressources/project1-image1.jpeg",
+        "media": [
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image1.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image2.jpeg"
+          },
+          {
+            "type": "video",
+            "url": "/assets/ressources/project1-video.mp4"
+          }
+        ],
+        "description": "Description du projet 1...",
+        "location": "Lieu du projet 1",
+        "date": "Date du projet 1"
+      },
+      {
+        "id": 2,
+        "title": "Projet 2",
+        "category": "Architecture d'intérieur",
+        "thumbnail": "/assets/ressources/project2-image1.jpeg",
+        "media": [
+          {
+            "type": "image",
+            "url": "/assets/ressources/project2-image1.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project2-image2.jpeg"
+          }
+        ],
+        "description": "Description du projet 2...",
+        "location": "Lieu du projet 2",
+        "date": "Date du projet 2"
+      },
+      {
+        "id": 5,
+        "title": "Projet 1",
+        "category": "Architecture d'intérieur",
+        "thumbnail": "/assets/ressources/project1-image2.jpeg",
+        "media": [
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image1.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image2.jpeg"
+          },
+          {
+            "type": "video",
+            "url": "/assets/ressources/project1-video.mp4"
+          }
+        ],
+        "description": "Description du projet 1...",
+        "location": "Lieu du projet 1",
+        "date": "Date du projet 1"
+      },{
+        "id": 6,
+        "title": "Projet 1",
+        "category": "Architecture d'intérieur",
+        "thumbnail": "/assets/ressources/project1-image2.jpeg",
+        "media": [
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image1.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image2.jpeg"
+          },
+          {
+            "type": "video",
+            "url": "/assets/ressources/project1-video.mp4"
+          }
+        ],
+        "description": "Description du projet 1...",
+        "location": "Lieu du projet 1",
+        "date": "Date du projet 1"
+      },{
+        "id": 7,
+        "title": "Projet 1",
+        "category": "Architecture d'intérieur",
+        "thumbnail": "/assets/ressources/project1-image1.jpeg",
+        "media": [
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image1.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image2.jpeg"
+          },
+          {
+            "type": "video",
+            "url": "/assets/ressources/project1-video.mp4"
+          }
+        ],
+        "description": "Description du projet 1...",
+        "location": "Lieu du projet 1",
+        "date": "Date du projet 1"
+      },{
+        "id": 8,
+        "title": "Projet 1",
+        "category": "Architecture d'intérieur",
+        "thumbnail": "/assets/ressources/project1-image1.jpeg",
+        "media": [
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image1.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image2.jpeg"
+          },
+          {
+            "type": "video",
+            "url": "/assets/ressources/project1-video.mp4"
+          }
+        ],
+        "description": "Description du projet 1...",
+        "location": "Lieu du projet 1",
+        "date": "Date du projet 1"
+      },{
+        "id": 9,
+        "title": "Projet 1",
+        "category": "Architecture d'intérieur",
+        "thumbnail": "/assets/ressources/project1-image1.jpeg",
+        "media": [
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image1.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image2.jpeg"
+          },
+          {
+            "type": "video",
+            "url": "/assets/ressources/project1-video.mp4"
+          }
+        ],
+        "description": "Description du projet 1...",
+        "location": "Lieu du projet 1",
+        "date": "Date du projet 1"
+      },{
+        "id": 10,
+        "title": "Projet 1",
+        "category": "Architecture d'intérieur",
+        "thumbnail": "/assets/ressources/project1-image1.jpeg",
+        "media": [
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image1.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image2.jpeg"
+          },
+          {
+            "type": "video",
+            "url": "/assets/ressources/project1-video.mp4"
+          }
+        ],
+        "description": "Description du projet 1...",
+        "location": "Lieu du projet 1",
+        "date": "Date du projet 1"
+      },{
+        "id": 11,
+        "title": "Projet 1",
+        "category": "Architecture d'intérieur",
+        "thumbnail": "/assets/ressources/project1-image1.jpeg",
+        "media": [
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image1.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image2.jpeg"
+          },
+          {
+            "type": "video",
+            "url": "/assets/ressources/project1-video.mp4"
+          }
+        ],
+        "description": "Description du projet 1...",
+        "location": "Lieu du projet 1",
+        "date": "Date du projet 1"
+      },{
+        "id": 12,
+        "title": "Projet 1",
+        "category": "Architecture d'intérieur",
+        "thumbnail": "/assets/ressources/project1-image1.jpeg",
+        "media": [
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image1.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image2.jpeg"
+          },
+          {
+            "type": "video",
+            "url": "/assets/ressources/project1-video.mp4"
+          }
+        ],
+        "description": "Description du projet 1...",
+        "location": "Lieu du projet 1",
+        "date": "Date du projet 1"
+      },{
+        "id": 13,
+        "title": "Projet 1",
+        "category": "Architecture d'intérieur",
+        "thumbnail": "/assets/ressources/project1-image1.jpeg",
+        "media": [
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image1.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image2.jpeg"
+          },
+          {
+            "type": "video",
+            "url": "/assets/ressources/project1-video.mp4"
+          }
+        ],
+        "description": "Description du projet 1...",
+        "location": "Lieu du projet 1",
+        "date": "Date du projet 1"
+      },{
+        "id": 14,
+        "title": "Projet 1",
+        "category": "Architecture d'intérieur",
+        "thumbnail": "/assets/ressources/project1-image1.jpeg",
+        "media": [
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image1.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image2.jpeg"
+          },
+          {
+            "type": "video",
+            "url": "/assets/ressources/project1-video.mp4"
+          }
+        ],
+        "description": "Description du projet 1...",
+        "location": "Lieu du projet 1",
+        "date": "Date du projet 1"
+      }
+      
+      
+    ]
+  }
+  

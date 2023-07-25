@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from './Accordeon.module.css'
 
 export default function Accordeon(props) {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(props.state);
   const changeState = () => {
     const arrow = document.getElementById(`${props.title}`);
     !toggle

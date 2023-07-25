@@ -10,6 +10,8 @@ import styles from '@/styles/Accueil.module.css'
 import { useTranslation } from 'react-i18next';
 //Components
 import Accordeon from '@/Component/Accordeon/Accordeon'
+import Gallery from '@/Component/Gallery/Gallery'
+import BoutonLink from '@/Component/BoutonLink/BoutonLink'
 
 export default function accueil(props) {
 
@@ -45,36 +47,53 @@ export default function accueil(props) {
             <span className={styles.prezContent}>{t("accueil.prezSectionText1")} </span>
             <span className={styles.prezContent}>{t("accueil.prezSectionText2")}</span>
             <span className={styles.prezContent}>{t("accueil.prezSectionText3")}</span>
-            <button className={styles.prezButton}>
+            {/* <button className={styles.prezButton}>
               <span className={styles.textContainer}>
                 <span className={styles.text}>{t("accueil.prezSectionButton")}</span>
               </span>
-            </button>
+            </button> */}
+            <BoutonLink link='contact' textButton={t("accueil.prezSectionButton")}/>
+           
 
           </div>
         </section>
+        <section className={styles.gallerySection}>
+          <Gallery />
+          {/* <button className={styles.prezButton}>
+            <span className={styles.textContainer}>
+              <span className={styles.text}>{t("accueil.gallerySectionButton")}</span>
+            </span>
+          </button> */}
+        <BoutonLink link='/projects/' textButton={t("accueil.gallerySectionButton")}/>
+        </section>
 
         <section className={styles.accordeon}>
-          <ul>
-            <Accordeon title='Etude projet' content='Rencontre avec le client
+          <div className={styles.containerAccordeonSectionImg}></div>
+          <div className={styles.containerAccordeonSection}>
+          <h3>Nos services</h3>
+            <ul>
+              <Accordeon state={true} title='Etude projet' content='Rencontre avec le client
 Visite des lieux 
 Définition du cahier des charges et du budget
+
 Etude de faisabilité
 Relevé détat des lieux'/>
-            <Accordeon title='Mise en Oeuvre' content='Avant projet définitif
+              <Accordeon state={false} title='Mise en Oeuvre' content='Avant projet définitif
 Présentation en plans et en 3D du projet
 Mise en place du projet définitif'/>
-            <Accordeon title='Gestion et planning' content='Mise en œuvre du projet
+              <Accordeon state={false} title='Gestion et planning' content='Mise en œuvre du projet
 Coordination des travaux et réunions de chantier
 Gestion des plannings'/>
 
-          </ul>
+            </ul>
+          </div>
         </section>
-        <h1>{t("accueil.version")}</h1>
-        <p>{t("accueil.prez")}</p>
-        <p>{t("accueil.prez2")}</p>
-        <p>{t("accueil.thanks")}</p>
+<div className={styles.contactSection}>
+  <BoutonLink link='contact' textButton={t("accueil.contactSectionButton")}/>
+</div>
       </main>
+
+
 
     </>
   )
