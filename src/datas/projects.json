@@ -3,6 +3,7 @@
       {
         "id": 1,
         "title": "Projet 1",
+        "backgroundImage": "/assets/ressources/project1-image1.jpeg",
         "category": "Architecture d'intérieur",
         "thumbnail": "/assets/ressources/project1-image1.jpeg",
         "media": [
@@ -13,6 +14,22 @@
           {
             "type": "image",
             "url": "/assets/ressources/project1-image2.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image3.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image4.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image5.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image6.jpeg"
           },
           {
             "type": "video",

@@ -32,13 +32,13 @@ export default function Home(props) {
     'assets/img/backgroundHome/img3.jpeg',
     // Ajoutez d'autres URL d'images ici
   ];
-  
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
-    }, 5000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
@@ -58,6 +58,7 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+
         <div className={styles.logoContainer}>
           <div className={styles.logo}>
             <div className="logo"><Image className={styles.logoImg} src={img1}/></div>
@@ -86,9 +87,11 @@ export default function Home(props) {
 
         {/* Background diaporama  */}
         <section className={styles.backgroundSection}>
-          <div className={styles.backgroundImage} style={backgroundImageStyle}></div>
+          
+          <div className={`${styles.backgroundImage} ${styles.animate}`}  style={backgroundImageStyle}></div>
+        <div className={styles.scanlines}></div>
         </section>
-
+        {/* Scanlines  */}
       </main>
     </>
   )

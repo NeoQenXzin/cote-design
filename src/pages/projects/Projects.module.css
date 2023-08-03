@@ -1,0 +1,149 @@
+
+  /* General Styles */
+
+.projectDetails {
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+    min-height: 80vh;
+    /* margin-top: 200px; */
+  }
+  
+  .titleContainer {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .header {
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
+  }
+  
+  .backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    filter: sepia(0.5);
+  }
+  
+  .description {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .location,
+  .date {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .showMediaButton {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .mediaContainer {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  
+  }
+  
+  .mediaItem {
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 100%;
+
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+    /* display: block;
+    margin: 0 auto; */
+  }
+  
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+  }
+  
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .videoFullscreen {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  /* Lightbox */
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--lightbox-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .lightboxContent {
+    position: relative;
+    max-width: 800px;
+    width: 80%;
+    max-height: 80%;
+  }
+  
+  .lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
