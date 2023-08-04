@@ -1,21 +1,31 @@
 import React from 'react'
+import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import prezImage from '../../public/assets/img/accueil/facade-angle.png'
-import logo from '../../public/assets/logos/logoLight.png'
-import logo2 from '../../public/assets/logos/logoDark.png'
 // import videoTheme from '../../public/assets/video/accueilDemo.mp4'
 import buttonExploreDown from '../../public/assets/icones/icon-explore-down.png'
 import styles from '@/styles/Accueil.module.css'
 import { useTranslation } from 'react-i18next';
 //Components
 import Accordeon from '@/Component/Accordeon/Accordeon'
+import AccordeonPlus from '@/Component/AccordeonPlus/AccordeonPlus'
 import Gallery from '@/Component/Gallery/Gallery'
 import BoutonLink from '@/Component/BoutonLink/BoutonLink'
 
 export default function accueil(props) {
 
+// Traduction
   const { t } = useTranslation('en');
+//  State Accordeon 
+  const [accordeonStates, setAccordeonStates] = useState([true, false, false]);
+
+  const handleAccordeonChange = (index) => {
+    const newStates = accordeonStates.map((state, i) => (i === index ? !state : false));
+    setAccordeonStates(newStates);
+  };
+
+
   return (
     <>
       <Head>
@@ -44,6 +54,7 @@ export default function accueil(props) {
             <Image className={styles.prezImg} src={prezImage} alt='présentation illustration' />
           </div>
           <div className={styles.prezText}>
+            <h2 className={styles.prezContent}>{t("accueil.prezSectionTextH2")}</h2>
             <span className={styles.prezContent}>{t("accueil.prezSectionText1")} </span>
             <span className={styles.prezContent}>{t("accueil.prezSectionText2")}</span>
             <span className={styles.prezContent}>{t("accueil.prezSectionText3")}</span>
@@ -57,20 +68,56 @@ export default function accueil(props) {
 
           </div>
         </section>
+
+        {/* Section gallerie projet  */}
+        
         <section className={styles.gallerySection}>
           <Gallery />
           {/* <button className={styles.prezButton}>
             <span className={styles.textContainer}>
-              <span className={styles.text}>{t("accueil.gallerySectionButton")}</span>
+            <span className={styles.text}>{t("accueil.gallerySectionButton")}</span>
             </span>
           </button> */}
         <BoutonLink link='/projects/' textButton={t("accueil.gallerySectionButton")}/>
         </section>
 
-        <section className={styles.accordeon}>
+{/* Section Savoir faire (accordeon)  */}
+          <section className={styles.accordeonPlusSection}>
+                  <div className={styles.containerAccordeonSectionImgPlus}></div>
+                  <div className={styles.containerAccordeonSectionPlus}>
+                    <h2>Nos services</h2>
+                    <AccordeonPlus
+                      title="Etude projet"
+                      content="Rencontre avec le client
+                      Visite des lieux 
+                      Définition du cahier des charges et du budget
+                      Etude de faisabilité
+                      Relevé d'état des lieux"
+                      active={accordeonStates[0]}
+                      onChange={() => handleAccordeonChange(0)}
+                    />
+                    <AccordeonPlus
+                      title="Mise en Oeuvre"
+                      content="Avant projet définitif
+                      Présentation en plans et en 3D du projet
+                      Mise en place du projet définitif"
+                      active={accordeonStates[1]}
+                      onChange={() => handleAccordeonChange(1)}
+                    />
+                    <AccordeonPlus
+                      title="Gestion et planning"
+                      content="Mise en œuvre du projet
+                      Coordination des travaux et réunions de chantier
+                      Gestion des plannings"
+                      active={accordeonStates[2]}
+                      onChange={() => handleAccordeonChange(2)}
+                    />
+                  </div>
+                </section>
+        {/* <section className={styles.accordeon}>
           <div className={styles.containerAccordeonSectionImg}></div>
           <div className={styles.containerAccordeonSection}>
-          <h3>Nos services</h3>
+          <h2>Nos services</h2>
             <ul>
               <Accordeon state={true} title='Etude projet' content='Rencontre avec le client
 Visite des lieux 
@@ -87,7 +134,7 @@ Gestion des plannings'/>
 
             </ul>
           </div>
-        </section>
+        </section> */}
 <div className={styles.contactSection}>
   <BoutonLink link='contact' textButton={t("accueil.contactSectionButton")}/>
 </div>

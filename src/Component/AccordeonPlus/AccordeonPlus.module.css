@@ -1,0 +1,67 @@
+/* AccordeonPlus.module.css */
+.accordeonPlus {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 80%;
+    padding: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #000;
+    text-align: left;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+  
+  .accordeonPlus h3 {
+    position: relative;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 24px;
+    color: #0e182d;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .accordeonPlus h3 span {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .accordeonPlus .content {
+    margin-top: -35px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+      /* Ajout du décalage à gauche équivalent à la taille du span */
+    margin-left: 30px;
+      /* Ajout de l'animation de déroulement */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-in-out;
+  }
+  
+  .accordeonPlus .content:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Styles pour l'état ouvert (toggle) */
+  .accordeonPlus.open .content {
+    /* display: block; */
+    max-height: 1000px; /* Ajuster la valeur selon vos besoins */
+    transition: max-height .3s ease-in-out; /* Ralentir la transition à l'ouverture */
+  }
+  
+  .accordeonPlus .arrow {
+    margin-right: 10px;
+    width: 20px;
+  }
+  @media (max-width: 1024px) {
+    
+    .accordeonPlus {
+        width: 100%;
+      }
+
+  }

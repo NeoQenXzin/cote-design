@@ -14,9 +14,9 @@ export default function Accordeon(props) {
 
   return (
   <li>
-    <h2 onClick={() => changeState()}>
+    <h3 onClick={() => changeState()}>
         {props.title} <span id={props.title} className={styles.arrow}></span> 
-    </h2>
+    </h3>
     <div className={toggle ? styles.open : styles.close }>{props.content}</div>
   </li>
     )

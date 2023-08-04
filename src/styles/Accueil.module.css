@@ -4,15 +4,17 @@
     /* background-color: blueviolet; */
     min-height: 100vh;
 }
-
+/* Section 1 (principale)  */
 .mainSection{
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 .buttonExplore{
 position: absolute;
 bottom: 50px;
 left: 50%;
+transform: translateX(-50%); /* Centrer horizontalement */
 z-index: 10;
 display: flex;
 justify-content: center;
@@ -48,7 +50,10 @@ to {
 }
 .buttonExplore:hover{
     mask: none;
+    /* background-color: var(--primary-color); Ajout d'une couleur de fond pour le bouton au survol */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Effet de texte pour le contraste au survol */
 }
+
 .buttonExplore:focus{
     border: none;
     outline: none;
@@ -58,89 +63,221 @@ to {
     height: 40px;
 }
 .buttonExplore span{
-    display: inline-block;
+  display: inline-block;
 }
 
 
 .videoBackground {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  /* section presentation */
-  .prezSection{
+/* Styles pour le responsive */
+@media (max-width: 768px) {
+  .buttonExplore {
+    font-size: 24px; /* Augmenter la taille du bouton */
+    text-shadow: none; /* Supprimer l'effet de texte au survol */
+  }
+  .buttonExploreImg{
+      width: 50px;
+      height: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .buttonExplore {
+    font-size: 32px; /* Augmenter la taille du bouton */
+    text-shadow: none; /* Supprimer l'effet de texte au survol */
+    bottom: 5%; /* Positionner 25% plus haut */
+  }
+  .buttonExploreImg{
+      width: 80px;
+      height: 80px;
+  }
+}
+
+/* section presentation */
+.prezSection{
     padding: 20px;
     background-color: #F6EEE3;
     display: flex;
     justify-content:center;
     align-items: center;
+    flex-wrap: wrap; /* Permet aux éléments de la section de passer à la ligne si nécessaire */
+
   }
   .prezText, .containerPrezImg {
     width: 50%;
-    padding: 20px;
+    /* padding: 20px; */
+  }
+  .containerPrezImg {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centrer horizontalement l'image */
   }
   .prezText{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
     flex-direction: column;
+    padding-left: 30px;
   }
   .prezImg{
     width: 80%;
     /* padding: 50px; */
     /* padding-right: 25%; */
-    object-fit: contain;
+    max-width: 600px; /* Limiter la largeur de l'image pour les grands écrans */
+    min-width: 300px; /* Ajout d'une largeur minimale pour les petits écrans */
+    object-fit: cover; /* Empêcher l'image d'être plus petite que le texte */
+  
+    /* object-fit: contain; */
   }
   .prezContent{
+    
     letter-spacing: 0.02em;
     display: inline-block;
+    margin: 10px 0; /* Espacement entre les paragraphes */
+    text-align: left;
   }
-
- .prezSection button{
+  
+  .prezSection button{
     font-family: 'Oswald', serif;
     font-size: 22px;
     letter-spacing: 2px;
- }
+    margin-top: 20px; /* Espacement entre le texte et le bouton */
+    
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .prezText, .containerPrezImg {
+      width: 100%;
+      padding: 20px; /* Ajout d'un espace autour des éléments */
+      box-sizing: border-box; /* Inclure les espaces dans la largeur totale */
+      margin: auto;
+      /* padding: 20px; */
+    }
+    .prezText{
+      
+      justify-content: center;
+      /* align-items: center; */
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+    .prezContent{
+      letter-spacing: 0.02em;
+      display: inline-block;
+      margin: 4px 0; /* Espacement entre les paragraphes */
+    }
+    .prezImg{
+      width: 100%;
+      margin: 0 auto 50px;
+      margin: 0 auto; /* Centrer l'image horizontalement */
+
+    }
+    .containerPrezImg {
+      display: flex;
+      justify-content: center; /* Centrer horizontalement l'image */
+    }
+    .prezSection button{
+      font-size: 22px;
+      letter-spacing: 2px;
+      margin-top: 50px; /* Espacement entre le texte et le bouton */
+      
+    }
+  }
+    @media (max-width: 480px) {
+      .prezSection{
+        padding: 2px;
+      }
+      .prezText, .containerPrezImg {
+        width: 100%;
+        padding: 10px 2px; /* Ajout d'un espace autour des éléments */
+        box-sizing: border-box; /* Inclure les espaces dans la largeur totale */
+        /* padding: 20px; */
+      }
+      .prezText{
+        margin-bottom: 30px;
+      }
+      .prezContent{
+        letter-spacing: 0.02em;
+        display: inline-block;
+        margin: 3px 0; /* Espacement entre les paragraphes */
+        text-align: center;
+      }
+      .prezImg{
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .prezSection button{
+        font-size: 18px;
+        margin-top: 50px; /* Espacement entre le texte et le bouton */
+        
+      }
+    }
+    
+    /* Section gallery  */
+    .gallerySection {
+      padding: 20px;
+      background-color: #F6EEE3;
+
+    }
+    .gallerySection button{
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+      font-family: 'Oswald', serif;
+      font-size: 22px;
+      letter-spacing: 2px;
+    }
+     /* Responsive */
+@media (max-width: 1024px) {
+  .gallerySection {
+    padding: 20px;
+  }
+}
 
     /* Section Accordeon */
-
+    
     .containerAccordeonSection{
-        width: 50%;
-        height: auto;
-        padding: 20px;
-        padding-top: 50px;
-        min-height: 800px;
-        display: flex;
-        justify-content: flex-start;
-        text-align: center;
-       gap: 50px;
-        flex-direction: column;
-        
+      width: 50%;
+      height: auto;
+      padding: 20px;
+      padding-top: 50px;
+      min-height: 800px;
+      display: flex;
+      justify-content: flex-start;
+      text-align: center;
+      gap: 50px;
+      flex-direction: column;
+      
     }
     .containerAccordeonSectionImg{
-        width: 50%;
-        height: 100%;
-        min-height: 800px;
-        background-image: url('../../public/assets/img/section-accordeon-img.jpeg');
-        background-size: cover;
-        background-position: center;
+      width: 50%;
+      height: 100%;
+      min-height: 800px;
+      background-image: url('../../public/assets/img/section-accordeon-img.jpeg');
+      background-size: cover;
+      background-position: center;
     }
     .accordeon{
-        padding-top: 50px;
-        min-height: 800px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+      padding-top: 50px;
+      min-height: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+   .containerAccordeonSection h2 {
+    align-items: flex-start;
+    display: block;
     }
     /* .accordeon .close {
-        display: none;
-      }
-      .accordeon .open {
+      display: none;
+    }
+    .accordeon .open {
         display: block;
         background: #f6f6f6;
       } */
@@ -149,7 +286,7 @@ to {
         list-style: none;
         margin-bottom: 55px;
       }
-      .accordeon h2 {
+      .accordeon h3 {
         background: #0e182d;
         border-radius: 5px;
         height: 47px;
@@ -167,7 +304,7 @@ to {
         padding-left: 18px;
         margin: auto;
       }
-      .accordeon h2 span {
+      .accordeon h3 span {
         position: absolute;
         right: 15px;
         width: 25px;
@@ -192,21 +329,75 @@ to {
         border-radius: 0 0 10px 10px;
       } */
 
-      /* Section gallery  */
-      .gallerySection {
-        padding: 20px;
-        background-color: #F6EEE3;
+      /* Autres styles pour les autres sections ... */
 
-      }
-      .gallerySection button{
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 50px;
-        font-family: 'Oswald', serif;
-        font-size: 22px;
-        letter-spacing: 2px;
-      }
+/* Section AccordeonPlus */
+.accordeonPlusSection {
+  padding-top: 50px;
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.containerAccordeonSectionPlus {
+  /* Styles pour la partie droite avec les AccordeonPlus */
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  padding-left: 40px;
+  padding-top: 50px;
+  min-height: 800px;
+  display: flex;
+  align-items: flex-start; /* Alignement vertical avec le H3 */
+  gap: 50px;
+  flex-direction: column;
+  margin: auto;
+}
+
+.containerAccordeonSectionImgPlus {
+  width: 50%;
+  height: 100%;
+  min-height: 800px;
+  background-image: url('../../public/assets/img/section-accordeon-img.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.containerAccordeonSectionPlus h2 {
+  color: #7F6A45;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 20px;
+}
       
+@media (max-width: 1024px) {
+  .containerAccordeonSectionImgPlus {
+    width: 0%;
+    display: none;
+  }
+  .containerAccordeonSectionPlus {
+    /* Styles pour la partie droite avec les AccordeonPlus */
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    padding-top: 50px;
+    min-height: 800px;
+    display: flex;
+    align-items: flex-start; /* Alignement vertical avec le H3 */
+    gap: 50px;
+    flex-direction: column;
+  }
+  .containerAccordeonSectionPlus h2 {
+    font-size: 36px;
+    padding-left: 12px;
+    width: 100%;
+    margin: 0 auto;
+  /* padding-left: 20px; */
+  }
+
+}
       /* Section Contact  */
       .contactSection{
         display: flex;
