@@ -15,7 +15,8 @@ export default function Gallery() {
     <div className={styles.galleryContainer}>
       <div className={styles.galleryRow}>
         <div className={`${styles.galleryItem} ${styles.row2_3}`} onClick={() => handleProjectClick(visibleProjects[0].id)}>
-          <img src={visibleProjects[0].thumbnail} alt={`Image ${visibleProjects[0].id}`} />
+        <video autoPlay loop muted className={styles.video} src={visibleProjects[0].thumbnail} alt={`Image ${visibleProjects[0].id}`} />
+          {/* <img src={visibleProjects[0].thumbnail} alt={`Image ${visibleProjects[0].id}`} /> */}
           <div className={styles.overlay}>
             <h3>{visibleProjects[0].title}</h3>
             <p>{visibleProjects[0].category}</p>

@@ -5,7 +5,7 @@
         "title": "Projet 1",
         "backgroundImage": "/assets/ressources/project1-image1.jpeg",
         "category": "Architecture d'intérieur",
-        "thumbnail": "/assets/ressources/project1-image1.jpeg",
+        "thumbnail": "/assets/ressources/project1-video.mp4",
         "media": [
           {
             "type": "image",
@@ -42,6 +42,46 @@
       },
       {
         "id": 2,
+        "title": "Projet 1",
+        "backgroundImage": "/assets/ressources/project1-image5.jpeg",
+        "category": "Architecture d'intérieur",
+        "thumbnail": "/assets/ressources/project1-image4.jpeg",
+        "media": [
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image1.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image2.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image3.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image4.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image5.jpeg"
+          },
+          {
+            "type": "image",
+            "url": "/assets/ressources/project1-image6.jpeg"
+          },
+          {
+            "type": "video",
+            "url": "/assets/ressources/project1-video.mp4"
+          }
+        ],
+        "description": "Description du projet 1...",
+        "location": "Lieu du projet 1",
+        "date": "Date du projet 1"
+      },
+      {
+        "id": 3,
         "title": "Projet 2",
         "category": "Architecture d'intérieur",
         "thumbnail": "/assets/ressources/project2-image1.jpeg",

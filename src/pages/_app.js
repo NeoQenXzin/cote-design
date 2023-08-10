@@ -27,6 +27,8 @@ export default function App({ Component, pageProps }) {
 
   const router = useRouter();
   const isHomePage = router.pathname === '/'; // Vérifie si la page actuelle est la page d'accueil
+  const isProjectsPage = router.pathname === '/projects'; // Vérifie si la page actuelle est la page projects/index.js
+
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -34,9 +36,9 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      {!isHomePage && <Navbar  changeLanguage={changeLanguage}/>} {/* Affiche la Navbar si ce n'est pas la page d'accueil */}
+      {!isHomePage  && !isProjectsPage && <Navbar  changeLanguage={changeLanguage}/>} {/* Affiche la Navbar si ce n'est pas la page d'accueil */}
       <Component {...pageProps}  />
-      {!isHomePage && <Footer  changeLanguage={changeLanguage}/>} {/* Affiche le Footer si ce n'est pas la page d'accueil */}
+      {!isHomePage  && !isProjectsPage && <Footer  changeLanguage={changeLanguage}/>} {/* Affiche le Footer si ce n'est pas la page d'accueil */}
     </>
   );
 }

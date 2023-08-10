@@ -1,8 +1,9 @@
 {
     "menu": {
         "accueil": "Home",
-        "services": "Eservices",
-        "contact": "contact us"
+        "services": "Services",
+        "contact": "contact us",
+        "projects": "Projects"
     },
     "accueil": {
         "prezSectionTextH2": "Our agency",

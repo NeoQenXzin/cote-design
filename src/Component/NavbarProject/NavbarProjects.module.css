@@ -1,0 +1,151 @@
+/* Navbar.module.css */
+
+.navbar {
+    z-index: 10;
+    height: 90px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .navContainer {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menuIcon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: transparent;
+    border: red;
+    padding: 0;
+    z-index: 10;
+  }
+  
+  .iconBar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    z-index: 10;
+    /* transition: 0.4s; */
+  }
+  
+  .navLinks {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .navItem {
+    margin-right: 20px;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  /* .navLink:hover {
+   
+     
+      animation: shine 3s  ;
+      transition: .4s;
+      text-decoration: underline;
+  
+} */
+.navLink:hover {
+  font-weight: bold;
+  /* background: linear-gradient(-75deg, rgba(0, 0, 0, 0.2) 30%, #000 50%, rgba(0, 0, 0, 0.2) 70%); */
+  mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.2) 30%, #000 50%, rgba(0, 0, 0, 0.2) 70%);
+  mask-size: 250%;
+  mask-position: -150%;
+  animation: shine 3s linear infinite;
+}
+@keyframes shine {
+  0%, 100% {
+    mask-position: 100%;
+  }
+  50% {
+    mask-position: -50%;
+  }
+}
+/* 
+  @-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    to {
+      -webkit-mask-position: -50%;
+    }
+  } */
+  
+  /* Styles for mobile menu */
+  @media (max-width: 765px) {
+    .menuIcon {
+      display: flex;
+    }
+  
+    .navLinks {
+      flex-direction: column;
+      position: absolute;
+      top: 90px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      transform: translateY(-100%);
+      opacity: 0;
+      transition: transform 0.4s, opacity 0.4s;
+    }
+  
+    .navLinks.open {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  
+    .navItem {
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      padding: 15px 0;
+    }
+  
+    .navItem:last-child {
+      border-top: 1px solid #ddd;
+    }
+  
+    .navLink {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .navLinks.open {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .open {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  }
+  

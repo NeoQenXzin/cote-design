@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;500;600&display=swap');
 
 :root {
-  --primary-color: #007bff;
+  --primary-color: #261A0F;
+  --secondary-color: #625B5B;
+  --light-bg-color: #F6EEE3;
+  --dark-bg-color: #1A1818;
+  --accent-font: 'accentgraphic', sans-serif;
   --lightbox-background: rgba(0, 0, 0, 0.8);
   --max-width: 1100px;
   --border-radius: 12px;
