@@ -32,3 +32,21 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+
+/* Media querries */
+
+
+@media (max-width: 1531px) {
+  
+}
+@media (max-width: 1531px) and (min-width:480px) {
+ 
+}
+@media (max-width: 768px) {
+ 
+}
+
+@media (max-width: 480px) {
+  
+}
