@@ -24,6 +24,7 @@ export default function Home(props) {
     i18n.changeLanguage('fr')
   }
 
+
   // Diaporama Background 
   const backgroundImages = [
     'assets/img/backgroundHome/img0.jpeg',

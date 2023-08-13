@@ -6,6 +6,37 @@
     position: fixed;
     top:0;
     left:0;
+    transition: background-color 0.4s ease-out, height 0.4s ease-out;
+
+  }
+
+.navbar.scroll {
+    background: white !important;
+    height: 80px; /* Nouvelle hauteur */
+}
+.navbar.scroll .navLink {
+    z-index: 10;
+    color:#333;
+    font-size: 18px;
+    font-weight: bold;
+     letter-spacing: 1.5px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    /* font-weight: 600; */
+    transition: color 0.3s;
+  }
+  .navbar.scroll .navLink:hover, .logo:hover{
+    mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .2) 30%, #000 50%, rgba(0, 0, 0, .2) 70%);
+    mask-size: 200%;
+    animation: shine 3s infinite;
+    transition: .4s;
+}
+  .scrollIconBar {
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+    z-index: 10;
+   background: #333 !important;
   }
   
   .navContainer {
@@ -16,15 +47,15 @@
     max-width: 80vw;
     margin: 0 auto;
     padding: 0 20px;
-  }
-  
-  .logo {
+}
+
+.logo {
     text-decoration: none;
     display: flex;
     align-items: center;
-  }
-  
-  .menuIcon {
+}
+
+.menuIcon {
     display: none;
     flex-direction: column;
     cursor: pointer;
@@ -37,9 +68,9 @@
   .iconBar {
     width: 25px;
     height: 3px;
-    background-color: antiquewhite;
     margin: 3px 0;
     z-index: 10;
+    background-color: antiquewhite;
     /* transition: 0.4s; */
   }
   
@@ -49,6 +80,8 @@
     margin: 0;
     padding: 0;
     align-items: center;
+    justify-content: end;
+    gap:20px;
   }
   
   .navItem {
@@ -91,6 +124,7 @@
 	}
 }
 
+
   /* Styles for mobile menu */
   @media (max-width: 768px) {
     .menuIcon {
@@ -110,6 +144,7 @@
       transform: translateY(-100%);
       opacity: 0;
       transition: transform 0.4s, opacity 0.4s;
+      gap: 0px;
     }
   
     .navLinks.open {
