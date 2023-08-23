@@ -60,7 +60,6 @@
     flex-direction: column;
     cursor: pointer;
     background: transparent;
-    /* border: red; */
     padding: 0;
     z-index: 10;
   }
@@ -71,7 +70,6 @@
     margin: 3px 0;
     z-index: 10;
     background-color: antiquewhite;
-    /* transition: 0.4s; */
   }
   
   .navLinks {

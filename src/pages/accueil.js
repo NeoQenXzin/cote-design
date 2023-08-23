@@ -25,7 +25,9 @@ export default function accueil(props) {
     setAccordeonStates(newStates);
   };
 
-
+const tab = [2,4,6]
+const result = tab.map((e, i, t) => console.log(t))
+// console.log(result);
   return (
     <>
       <Head>
