@@ -6,7 +6,7 @@ import img1 from '../../public/assets/logos/logo-accueil.png'
 import flagFr from '../../public/assets/icones/flag-fr.gif'
 import flagEng from '../../public/assets/icones/flag-eng.gif'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import styles from '../styles/Home.module.css'
 import { useTranslation } from 'react-i18next';
 
 

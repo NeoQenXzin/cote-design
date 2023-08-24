@@ -1,3 +1,6 @@
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-zoom.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-video.css');
 
   /* General Styles */
 /* Page projet ID  */
@@ -440,4 +443,37 @@
 .projectInfo p {
   font-size: 16px;
   margin-bottom: 0;
+}
+
+
+/* Styles pour la galerie */
+.mediaContainer {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Utilisation de la grille pour la mise en page responsive */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1024px) {
+  /* .image{
+    max-width: 200px;
+  } */
+  .mediaContainer {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Utilisation de la grille pour la mise en page responsive */
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* .image{
+    max-width: 100%;
+  } */
+  .mediaContainer {
+
+    /* padding: 30px; */
+  }
 }

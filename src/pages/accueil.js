@@ -5,13 +5,13 @@ import Image from 'next/image'
 import prezImage from '../../public/assets/img/accueil/facade-angle.png'
 // import videoTheme from '../../public/assets/video/accueilDemo.mp4'
 import buttonExploreDown from '../../public/assets/icones/icon-explore-down.png'
-import styles from '@/styles/Accueil.module.css'
+import styles from '../styles/Accueil.module.css'
 import { useTranslation } from 'react-i18next';
 //Components
-import Accordeon from '@/Component/Accordeon/Accordeon'
-import AccordeonPlus from '@/Component/AccordeonPlus/AccordeonPlus'
-import Gallery from '@/Component/Gallery/Gallery'
-import BoutonLink from '@/Component/BoutonLink/BoutonLink'
+import Accordeon from '../Component/Accordeon/Accordeon'
+import AccordeonPlus from '../Component/AccordeonPlus/AccordeonPlus'
+import Gallery from '../Component/Gallery/Gallery'
+import BoutonLink from '../Component/BoutonLink/BoutonLink'
 
 export default function accueil(props) {
 
