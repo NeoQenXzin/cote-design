@@ -2,12 +2,16 @@
     z-index: 10;
     height: 110px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.162) !important;
+    background: rgba(0, 0, 0, 0.006) !important;
+    /* background: rgba(0, 0, 0, 0.162) !important; */
     position: fixed;
     top:0;
     left:0;
     transition: background-color 0.4s ease-out, height 0.4s ease-out;
 
+  }
+  .navbar:hover{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0)) !important;
   }
 
 .navbar.scroll {
@@ -26,6 +30,7 @@
     transition: color 0.3s;
   }
   .navbar.scroll .navLink:hover, .logo:hover{
+    /* mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .2) 30%, #000 50%, rgba(0, 0, 0, .2) 70%); */
     mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .2) 30%, #000 50%, rgba(0, 0, 0, .2) 70%);
     mask-size: 200%;
     animation: shine 3s infinite;

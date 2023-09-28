@@ -1,7 +1,7 @@
 {
     "menu": {
         "accueil": "Home",
-        "services": "Services",
+        "agence": "Agency",
         "contact": "contact us",
         "projects": "Projects"
     },
@@ -12,6 +12,14 @@
         "prezSectionText3": "the transformation and renovation of interior and exterior spaces.",
         "prezSectionButton": "Discover the agency",
         "gallerySectionButton": "See all our projects",
+        "accordeonSectionMainTitle": "Our Expertise",
+        "accordeonSectionTitle1": "Project Study",
+        "accordeonSectionTitle2": "Implementation",
+        "accordeonSectionTitle3": "Management and Scheduling",
+        "accordeonSectionContent1": "Meeting with the client \n Site visits \nDefinition of specifications and budget \nFeasibility study \nSite survey",
+        "accordeonSectionContent2": "Preliminary project \nPresentation in plans and 3D of the project \nImplementation of the final project",
+        "accordeonSectionContent3": "Project implementation \nCoordination of work and site meetings \nSchedule management",
+        
         "contactSectionButton": "Contact us"
     },
     "footer": {

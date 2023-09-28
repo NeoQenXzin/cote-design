@@ -130,7 +130,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: repeating-linear-gradient(rgba(0, 0, 0, 0.735) 0, rgba(0, 0, 0, 0.502) 2px, transparent 2px, transparent 5px);
+  /* background: repeating-linear-gradient(rgba(0, 0, 0, 0.735) 0, rgba(0, 0, 0, 0.502) 2px, transparent 2px, transparent 5px); */
   z-index: 1;
   pointer-events: none;
   opacity: 0.5; /* Réduire l'opacité des scanlines */

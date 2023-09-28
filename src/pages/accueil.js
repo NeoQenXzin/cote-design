@@ -25,9 +25,9 @@ export default function accueil(props) {
     setAccordeonStates(newStates);
   };
 
-const tab = [2,4,6]
-const result = tab.map((e, i, t) => console.log(t))
-// console.log(result);
+  const tab = [2, 4, 6]
+  const result = tab.map((e, i, t) => console.log(t))
+  // console.log(result);
   return (
     <>
       <Head>
@@ -60,13 +60,7 @@ const result = tab.map((e, i, t) => console.log(t))
             <span className={styles.prezContent}>{t("accueil.prezSectionText1")} </span>
             <span className={styles.prezContent}>{t("accueil.prezSectionText2")}</span>
             <span className={styles.prezContent}>{t("accueil.prezSectionText3")}</span>
-            {/* <button className={styles.prezButton}>
-              <span className={styles.textContainer}>
-                <span className={styles.text}>{t("accueil.prezSectionButton")}</span>
-              </span>
-            </button> */}
-            <BoutonLink link='contact' textButton={t("accueil.prezSectionButton")} />
-
+            <BoutonLink link='services' textButton={t("accueil.prezSectionButton")} />
 
           </div>
         </section>
@@ -82,30 +76,31 @@ const result = tab.map((e, i, t) => console.log(t))
         <section className={styles.accordeonPlusSection}>
           <div className={styles.containerAccordeonSectionImgPlus}></div>
           <div className={styles.containerAccordeonSectionPlus}>
-            <h2>Nos services</h2>
+            <h2>{t("accueil.accordeonSectionMainTitle")}</h2>
             <AccordeonPlus
-              title="Etude projet"
-              content="Rencontre avec le client
-                      Visite des lieux 
-                      Définition du cahier des charges et du budget
-                      Etude de faisabilité
-                      Relevé d'état des lieux"
+              title={t("accueil.accordeonSectionTitle1")}
+              content={t("accueil.accordeonSectionContent1").split('\n').map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
+              style={{ whiteSpace: 'pre-line' }}
               active={accordeonStates[0]}
               onChange={() => handleAccordeonChange(0)}
             />
             <AccordeonPlus
-              title="Mise en Oeuvre"
-              content="Avant projet définitif
-                      Présentation en plans et en 3D du projet
-                      Mise en place du projet définitif"
+              title={t("accueil.accordeonSectionTitle2")}
+              content={t("accueil.accordeonSectionContent2").split('\n').map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
+              style={{ whiteSpace: 'pre-line' }}
               active={accordeonStates[1]}
               onChange={() => handleAccordeonChange(1)}
             />
             <AccordeonPlus
-              title="Gestion et planning"
-              content="Mise en œuvre du projet
-                      Coordination des travaux et réunions de chantier
-                      Gestion des plannings"
+              title={t("accueil.accordeonSectionTitle3")}
+              content={t("accueil.accordeonSectionContent3").split('\n').map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
+              style={{ whiteSpace: 'pre-line' }}
               active={accordeonStates[2]}
               onChange={() => handleAccordeonChange(2)}
             />
@@ -117,18 +112,17 @@ const result = tab.map((e, i, t) => console.log(t))
           <h2>Nos services</h2>
             <ul>
               <Accordeon state={true} title='Etude projet' content='Rencontre avec le client
-Visite des lieux 
-Définition du cahier des charges et du budget
+                Visite des lieux 
+                Définition du cahier des charges et du budget
 
-Etude de faisabilité
-Relevé détat des lieux'/>
+                Etude de faisabilité
+                Relevé détat des lieux'/>
               <Accordeon state={false} title='Mise en Oeuvre' content='Avant projet définitif
-Présentation en plans et en 3D du projet
-Mise en place du projet définitif'/>
+                Présentation en plans et en 3D du projet
+                Mise en place du projet définitif'/>
               <Accordeon state={false} title='Gestion et planning' content='Mise en œuvre du projet
-Coordination des travaux et réunions de chantier
-Gestion des plannings'/>
-
+                Coordination des travaux et réunions de chantier
+                Gestion des plannings'/>
             </ul>
           </div>
         </section> */}

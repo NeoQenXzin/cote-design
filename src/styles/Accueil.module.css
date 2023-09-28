@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.cdnfonts.com/css/calibri-light');
 
 .main{
     /* background-color: blueviolet; */
@@ -101,7 +102,8 @@ to {
 
 /* section presentation */
 .prezSection{
-    padding: 20px;
+
+    padding: 100px 20px 90px 20px;
     background-color: #F6EEE3;
     display: flex;
     justify-content:center;
@@ -109,8 +111,14 @@ to {
     flex-wrap: wrap; /* Permet aux éléments de la section de passer à la ligne si nécessaire */
 
   }
-  .prezText, .containerPrezImg {
+  /* .prezText, .containerPrezImg {
     width: 50%;
+  } */
+  .prezText {
+    width: 60%;
+  }
+  .containerPrezImg {
+    width: 40%;
     /* padding: 20px; */
   }
   .containerPrezImg {
@@ -122,7 +130,13 @@ to {
     justify-content: center;
     /* align-items: center; */
     flex-direction: column;
-    padding-left: 30px;
+    padding-left: 10vw;
+  }
+  .prezText h2 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    letter-spacing: 0,04em;
+    color: #261a0f;
   }
   .prezImg{
     width: 80%;
@@ -140,13 +154,18 @@ to {
     display: inline-block;
     margin: 10px 0; /* Espacement entre les paragraphes */
     text-align: left;
+    font-size: 18px;
+    font-family: 'Calibri Light', sans-serif;
+    color: #261A0F;
+    /* font-weight: 300; */
   }
   
   .prezSection button{
     font-family: 'Oswald', serif;
-    font-size: 22px;
+    /* font-size: 22px; */
+    font-size: 16px;
     letter-spacing: 2px;
-    margin-top: 20px; /* Espacement entre le texte et le bouton */
+    margin-top: 50px; /* Espacement entre le texte et le bouton */
     
   }
   
@@ -227,11 +246,13 @@ to {
     .gallerySection button{
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 50px;
+      margin-bottom: 120px;
+      margin-top: 0 !important;
       font-family: 'Oswald', serif;
-      font-size: 22px;
+      font-size: 18px;
       letter-spacing: 2px;
     }
+
      /* Responsive */
 @media (max-width: 1024px) {
   .gallerySection {

@@ -9,7 +9,7 @@ export default function Gallery() {
     router.push(`/projects/${projectId}`);
   };
 
-  const visibleProjects = projectsData.projects.slice(0, 8);
+  const visibleProjects = projectsData.projects.slice(0, 6);
 
   return (
     <div className={styles.galleryContainer}>
@@ -64,7 +64,7 @@ export default function Gallery() {
           </div>
         </div>
       </div>
-
+{/* 
       <div className={styles.galleryRow}>
         <div className={`${styles.galleryItem} ${styles.row1_3}`} onClick={() => handleProjectClick(visibleProjects[6].id)}>
           <img src={visibleProjects[6].thumbnail} alt={`Image ${visibleProjects[6].id}`} />
@@ -80,7 +80,7 @@ export default function Gallery() {
             <p>{visibleProjects[7].category}</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

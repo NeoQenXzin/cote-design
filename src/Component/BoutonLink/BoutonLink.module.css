@@ -3,7 +3,8 @@
     display: block;
     margin-top: 50px;
     box-sizing: border-box;
-    padding: 20px 45px;
+    /* padding: 20px 45px; */
+    padding: 13px 32px;
     position: relative;
     color: white;
     background: none;

@@ -1,7 +1,7 @@
 {
     "menu": {
         "accueil": "Accueil",
-        "services": "Prestations",
+        "agence": "Agence",
         "contact": "Contact",
         "projects": "Réalisations"
     },
@@ -12,6 +12,13 @@
         "prezSectionText3": "la transformation et la rénovation d'espaces intérieurs et extérieurs. ",
         "prezSectionButton": "Decouvrir l'agence",
         "gallerySectionButton": "Voir tout nos projets",
+        "accordeonSectionMainTitle": "Notre Expertise",
+        "accordeonSectionTitle1": "Etude projet",
+        "accordeonSectionTitle2": "Mise en Oeuvre",
+        "accordeonSectionTitle3": "Gestion et planning",
+        "accordeonSectionContent1": "Rencontre avec le client \n Visite des lieux \nDéfinition du cahier des charges et du budget \nEtude de faisabilité \nRelevé d'état des lieux",
+        "accordeonSectionContent2": "Avant projet définitif \nPrésentation en plans et en 3D du projet \nMise en place du projet définitif",
+        "accordeonSectionContent3": "Mise en œuvre du projet \nCoordination des travaux et réunions de chantier  \nGestion des plannings",
         "contactSectionButton": "Nous Contacter",
 
         "version": "Version Française",
