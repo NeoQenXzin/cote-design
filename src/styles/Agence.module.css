@@ -1,0 +1,108 @@
+.main {
+    margin-top: 100px;
+}
+
+/* Section mainTile  */
+.sectionMainTitle{
+    position: relative;
+    height: 65vh;
+    width: 100%;
+    /* margin-bottom: 50px; */
+}
+.mainTitleBackground{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../../public/assets/ressources/project1-image9.jpeg);
+    background-position: center;
+    filter: brightness(50%);
+}
+.sectionMainTitle h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    z-index: 10;
+    opacity: 0;
+    animation: fadeIn .5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Section presentation */
+.sectionPresentation{
+    height: 65vh;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 50px;
+    background-color: #F6EEE3 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.prezContainer, .philosophyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+}
+.prezTitle, .prezContent, .philosophyContent, .philosophyTitle {
+    padding: 50px;
+    width: 50%;
+    /* border: 1px solid red; */
+}
+.philosophyTitle , .prezTitle {
+    text-align: center;
+    color: #C2B49E;
+    font-size: 25px;
+}
+.prezContent , .philosophyContent {
+    color: #4F3726;
+
+}
+/* Section philosophy */
+
+    /* Ajoutez des styles pour la section de philosophie */
+    .philosophytitle {
+        color: #C2B49E; /* Couleur correspondant à votre style précédent */
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .philosophycontent {
+        color: #4F3726; /* Couleur correspondant à votre style précédent */
+    }
+
+    /* Ajoutez des styles spécifiques pour les paragraphes dans la section de philosophie */
+    .philosophycontent p {
+        margin-bottom: 15px;
+    }
+    .presentation {
+        /* Ajoutez des styles pour le conteneur principal */
+        text-align: center;
+        margin-top: 50px; /* Ajustez la marge en fonction de vos besoins */
+    }
+        /* Ajoutez des styles pour le titre principal */
+        .presentation  h2 {
+            color: #4F3726; /* Couleur correspondant à votre style précédent */
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        /* Ajoutez des styles pour le paragraphe principal */
+        .presentation p {
+            color: #4F3726; /* Couleur correspondant à votre style précédent */
+            font-size: 18px;
+            margin-bottom: 30px;
+        }

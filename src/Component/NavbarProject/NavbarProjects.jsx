@@ -33,8 +33,8 @@ export default function Navbar(props) {
             </Link>
           </li>
           <li className={style.navItem}>
-            <Link href={"/services"} className={style.navLink}>
-              {t("menu.services")}
+            <Link href={"/agence"} className={style.navLink}>
+              {t("menu.agence")}
             </Link>
           </li>
           <li className={style.navItem}>
