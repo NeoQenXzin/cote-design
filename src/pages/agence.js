@@ -58,7 +58,7 @@ export default function agence() {
         </p> */}
 
 
-        <div className={styles.valueContainer}>
+        <div className={`${styles.valueContainer} ${styles.valueContainerResp1}`}>
           <div className={`${styles.imageContainer} ${styles.imgValueContainer1}`}> 
           <Image className={styles.imageContainerImg} src={valueExel}/>
           </div>
@@ -69,7 +69,7 @@ export default function agence() {
             </p>
           </div>
         </div>
-        <div className={styles.valueContainer}>
+        <div className={`${styles.valueContainer} ${styles.valueContainerResp2}`}>
           <div className={styles.textValueContainer2}>
             <h3>Dévouement à l'Excellence:</h3>
             <p>
@@ -80,7 +80,7 @@ export default function agence() {
           <Image className={styles.imageContainerImg} src={valueCrea}/>
           </div>
         </div>
-        <div className={styles.valueContainer}>
+        <div className={`${styles.valueContainer} ${styles.valueContainerResp3}`}>
           <div className={`${styles.imageContainer} ${styles.imgValueContainer3}`}>
           <Image className={styles.imageContainerImg} src={valueEco}/>
           </div>
@@ -91,7 +91,7 @@ export default function agence() {
             </p>
           </div>
         </div>
-        <div className={styles.valueContainer}>
+        <div className={`${styles.valueContainer} ${styles.valueContainerResp4}`}>
           <div className={styles.textValueContainer4}>
             <h3>Collaboration Transparente:</h3>
             <p>
@@ -102,7 +102,7 @@ export default function agence() {
           <Image className={styles.imageContainerImg} src={valueTeam}/>
           </div>
         </div>
-        <div className={styles.valueContainer}>
+        <div className={`${styles.valueContainer} ${styles.valueContainerResp5}`}>
           <div className={`${styles.imageContainer} ${styles.imgValueContainer5}`}>
           <Image className={styles.imageContainerImg} src={valueInnov}/>
           </div>

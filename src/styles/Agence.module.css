@@ -39,7 +39,7 @@
 
 /* Section presentation */
 .sectionPresentation{
-    height: 70vh;
+    min-height: 70vh;
     width: 100%;
     padding: 100px 50px;
 
@@ -76,20 +76,21 @@
     font-weight: 600;
 
 }
+     
 /* Section philosophy */
 
-    /* Ajoutez des styles pour la section de philosophie */
+   
     .philosophytitle {
-        color: #C2B49E; /* Couleur correspondant à votre style précédent */
+        color: #C2B49E; 
         font-size: 25px;
         margin-bottom: 20px;
     }
 
     .philosophycontent {
-        color: #4F3726; /* Couleur correspondant à votre style précédent */
+        color: #4F3726; 
     }
 
-    /* Ajoutez des styles spécifiques pour les paragraphes dans la section de philosophie */
+  
     .philosophycontent p {
         margin-bottom: 15px;
     }
@@ -98,9 +99,8 @@
     /* Section Principes  */
 
     .sectionPrincipes {
-        /* Ajoutez des styles pour le conteneur principal */
         text-align: center;
-        padding-top: 50px; /* Ajustez la marge en fonction de vos besoins */
+        padding-top: 50px; 
         padding-bottom: 100px;
         background: #E5E0E6;
         display: flex;
@@ -111,7 +111,7 @@
     }
 
     .sectionPrincipes  h2 {
-        color: #4F3726; /* Couleur correspondant à votre style précédent */
+        color: #4F3726; 
         font-size: 40px;
         font-weight: 700;
         letter-spacing: 0.08em;
@@ -129,7 +129,7 @@
         
     }
     .sectionPrincipes p {
-        color: #4F3726; /* Couleur correspondant à votre style précédent */
+        color: #4F3726; 
         color: #F6EEE3;
         font-size: 20px;
         margin-bottom: 30px;
@@ -232,3 +232,138 @@
         color: gray;
         font-family: Georgia, 'Times New Roman', Times, serif;
        }
+
+
+
+       /* Responsive */
+     @media (max-width: 764px) {
+        .sectionMainTitle h1 {
+            left: 20%;
+            transform: translate(-10%, -50%);
+        }
+        .prezTitle, .prezContent, .philosophyContent, .philosophyTitle {
+            padding: 0px;
+            width: 100%;
+        }
+        .prezContainer {
+            flex-wrap: wrap;
+        }
+        .philosophyTitle , .prezTitle {
+            margin-bottom: 25px;
+            margin-top: 45px;
+            font-size: 25px;
+        }
+        /* Value section responsive  */
+        .sectionPrincipes {
+        text-align: center;
+        padding-top: 50px; 
+        padding-bottom: 100px;
+        background: #E5E0E6;
+        gap: 30px;
+    }
+
+    .sectionPrincipes  h2 {
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        margin-bottom: 40px;  
+        margin-top: 20px;      
+        text-align: center;
+    }
+    .sectionPrincipes h3 {
+        color: #F6EEE3;
+        font-size: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        
+    }
+    .sectionPrincipes p {
+        font-size: 20px;
+        margin-bottom: 30px;
+        max-width: 100%;
+        font-family: 'Mukta', sans-serif;
+        font-weight: 300;
+
+    }
+
+    .valueContainer {
+        height: auto;
+        width: 90%;
+        flex-direction: column;
+        color: white;
+    }
+ 
+    .textValueContainer1 {
+        background-color: #5D563F;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 50px;
+    }
+    .textValueContainer2 {
+        background-color: #916C52;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 50px;
+    }
+    .textValueContainer3 {
+        background-color: #7F6F50;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 50px;
+    }
+    .textValueContainer4 {
+        background-color: #AC9D8D;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 50px;
+    }
+    .textValueContainer5 {
+        background-color: #969594;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 50px;
+    }
+    .imageContainer{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        background: #000;
+    }
+    .imageContainer img{
+       width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background: #000;
+        object-position: center;
+    }
+    .imageContainerImg{
+        object-fit: cover;
+        width: 100%;
+        
+    }
+    .valueContainerResp2, .valueContainerResp4{
+        flex-direction: column-reverse;
+    }
+      }

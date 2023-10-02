@@ -279,7 +279,8 @@ to {
       width: 50%;
       height: 100%;
       min-height: 800px;
-      background-image: url('../../public/assets/img/section-accordeon-img.jpeg');
+      /* background-image: url('../../public/assets/img/section-accordeon-img.jpeg'); */
+      background-image: url('../../public/assets/ressources/valbonne-village.jpeg');
       background-size: cover;
       background-position: center;
     }
