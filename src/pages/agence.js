@@ -1,65 +1,124 @@
 import React from 'react'
 import styles from '../styles/Agence.module.css'
+import Carousel from '../Component/Carousel/Carousel'
 import { useTranslation } from 'react-i18next';
+import Image from 'next/image';
+import valueExel from '../../public/assets/ressources/agence-value-exel.jpg'
+import valueCrea from '../../public/assets/ressources/agence-value-crea.jpg'
+import valueEco from '../../public/assets/ressources/agence-value-nature.jpg'
+import valueTeam from '../../public/assets/ressources/agence-value-team.jpg'
+import valueInnov from '../../public/assets/ressources/agence-value-inov.jpg'
 
 export default function agence() {
+
+  const { t } = useTranslation('en');
+
+
+  const testimonials = [
+    { id: 1, content: "Super équipe, à l'écoute et très professionnelle. Nous adorons la maison, merci beaucoup pour votre travail." },
+    { id: 2, content: 'Très bon service, merci pour votre travail.' },
+    { id: 3, content: "Super équipe, à l'écoute et très professionnelle" },
+    // Ajoutez d'autres avis au besoin
+  ];
+
   return (
     <main className={styles.main}>
 
       <section className={styles.sectionMainTitle}>
         <div className={styles.mainTitleBackground}></div>
 
-        <h1 className={styles.mainTitle}>Bla bla bla power title</h1>
+        <h1 className={styles.mainTitle}>" &nbsp;{t("agence.mainTitle")} &nbsp;"</h1>
       </section>
 
       <section className={styles.sectionPresentation}>
         <div className={styles.prezContainer}>
-          <div className={styles.prezTitle}><h3>Qui sommes nous?</h3></div>
+          <div className={styles.prezTitle}><h3>{t("agence.prezTitle")}</h3></div>
           <div className={styles.prezContent}>
-
-            Située au cœur du village historique de Valbonne, l'agence d'architecture d'intérieur Cote Design est spécialisée dans la conception, la transformation et la rénovation d'espaces intérieurs et extérieurs.
-
-            Brigitte Carteret a fait ses débuts dans l'univers du prêt à porter où elle a développé sa sensibilité aux matières et aux couleurs. Depuis 1989, elle met toute sa passion et son expérience professionnelle au service de ses clients. Dotée d'une maitrise d'œuvre, elle accompagne chaque projet de la conception jusqu'à la réalisation.
+            {t("agence.prezContent").split('\n').map((line, index) => (
+              <p key={index}>{line}</p>
+            ))}
           </div>
         </div>
 
         <div className={styles.philosophyContainer}>
 
-          <div className={styles.philosophyTitle}><h3>Notre Philosophie</h3></div>
           <div className={styles.philosophyContent}>
-            L'écoute et la compréhension des besoins de chaque client est au centre de notre réflexion et chaque projet est une vraie rencontre. Tout notre travail consiste à allier le beau et l'utile, la créativité et la technique. C'est pourquoi au delà de notre concept nous étudions la faisabilité de chaque projet jusque dans les moindres détails afin de se démêler des contraintes et de mettre la technique au service de l'esthétique.
-
-            Remodeler les volumes, moderniser les espaces, redessiner les lignes et jouer avec la lumière, harmoniser les couleurs et les matières... Du gros œuvre aux finitions nous redonnons vie aux lieux en privilégiant le bien être des occupants dans une ambiance intemporelle.
+            {t("agence.philosophyContent").split('\n').map((line, index) => (
+              <p key={index}>{line}</p>
+            ))}
           </div>
+          <div className={styles.philosophyTitle}><h3>{t("agence.philosophyTitle")}</h3></div>
         </div>
       </section>
 
-      <div className={styles.presentation}>
-  <h2>À Propos de Coté Design</h2>
-  <p>
-    Chez Coté Design, nous sommes animés par des valeurs fondamentales qui guident notre démarche et définissent notre identité.
-  </p>
+      <div className={styles.sectionPrincipes}>
+        <h2>Nos Principes Directeurs</h2>
+        {/* <p>
+          Chez Coté Design, nous sommes animés par des valeurs fondamentales qui guident notre démarche et définissent notre identité.
+        </p> */}
 
-  <div className={styles.philosophytitle}>Nos Principes Directeurs</div>
-  <div className={styles.philosophycontent}>
-    <p>
-      <strong>Créativité Innovante:</strong> Chez Coté Design, chaque projet est une toile vierge où la créativité s'épanouit. Nous nous engageons à apporter des idées innovantes, repoussant constamment les limites du design et de la fonctionnalité.
-    </p>
-    <p>
-      <strong>Dévouement à l'Excellence:</strong> Nous sommes dévoués à offrir un travail d'une qualité exceptionnelle. Chaque détail compte, de la conception initiale à la réalisation finale, assurant ainsi la satisfaction et la confiance de nos clients.
-    </p>
-    <p>
-      <strong>Respect de l'Environnement:</strong> Coté Design s'engage à intégrer des pratiques respectueuses de l'environnement dans chaque étape de nos projets. Nous explorons constamment des solutions durables et éco-responsables.
-    </p>
-    <p>
-      <strong>Collaboration Transparente:</strong> La collaboration ouverte et transparente est au cœur de notre approche. Nous travaillons en étroite collaboration avec nos clients, les consultant à chaque étape du processus pour garantir une satisfaction totale.
-    </p>
-    <p>
-      <strong>Innovation Technologique:</strong> À l'avant-garde de l'innovation, nous embrassons les dernières avancées technologiques. Cela se traduit par des solutions modernes et efficaces qui répondent aux besoins actuels et futurs.
-    </p>
-  </div>
-</div>
 
+        <div className={styles.valueContainer}>
+          <div className={`${styles.imageContainer} ${styles.imgValueContainer1}`}> 
+          <Image className={styles.imageContainerImg} src={valueExel}/>
+          </div>
+          <div className={`${styles.textValueContainer1} ${styles.textValue}`}>
+            <h3>Créativité Innovante:</h3>
+            <p>
+              Chez Coté Design, chaque projet est une toile vierge où la créativité s'épanouit. Nous nous engageons à apporter des idées innovantes, repoussant constamment les limites du design et de la fonctionnalité.
+            </p>
+          </div>
+        </div>
+        <div className={styles.valueContainer}>
+          <div className={styles.textValueContainer2}>
+            <h3>Dévouement à l'Excellence:</h3>
+            <p>
+              Nous sommes dévoués à offrir un travail d'une qualité exceptionnelle. Chaque détail compte, de la conception initiale à la réalisation finale, assurant ainsi la satisfaction et la confiance de nos clients.
+            </p>
+          </div>
+          <div className={`${styles.imageContainer} ${styles.imgValueContainer2}`}>
+          <Image className={styles.imageContainerImg} src={valueCrea}/>
+          </div>
+        </div>
+        <div className={styles.valueContainer}>
+          <div className={`${styles.imageContainer} ${styles.imgValueContainer3}`}>
+          <Image className={styles.imageContainerImg} src={valueEco}/>
+          </div>
+          <div className={styles.textValueContainer3}>
+            <h3>Respect de l'Environnement:</h3>
+            <p>
+              Coté Design s'engage à intégrer des pratiques respectueuses de l'environnement dans chaque étape de nos projets. Nous explorons constamment des solutions durables et éco-responsables.
+            </p>
+          </div>
+        </div>
+        <div className={styles.valueContainer}>
+          <div className={styles.textValueContainer4}>
+            <h3>Collaboration Transparente:</h3>
+            <p>
+              La collaboration ouverte et transparente est au cœur de notre approche. Nous travaillons en étroite collaboration avec nos clients, les consultant à chaque étape du processus pour garantir une satisfaction totale.
+            </p>
+          </div>
+          <div className={`${styles.imageContainer} ${styles.imgValueContainer4}`}>
+          <Image className={styles.imageContainerImg} src={valueTeam}/>
+          </div>
+        </div>
+        <div className={styles.valueContainer}>
+          <div className={`${styles.imageContainer} ${styles.imgValueContainer5}`}>
+          <Image className={styles.imageContainerImg} src={valueInnov}/>
+          </div>
+          <div className={styles.textValueContainer5}>
+            <h3>Innovation Technologique:</h3>
+            <p>
+              À l'avant-garde de l'innovation, nous embrassons les dernières avancées technologiques. Cela se traduit par des solutions modernes et efficaces qui répondent aux besoins actuels et futurs.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section className={styles.sectionCarousel}>
+        <h2>Témoignages</h2>
+        <Carousel testimonials={testimonials} />
+      </section>
     </main>
   )
 }

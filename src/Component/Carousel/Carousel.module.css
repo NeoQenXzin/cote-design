@@ -1,0 +1,34 @@
+/* Carousel.module.css */
+.carouselContainer {
+    width: 90%;
+    background: #ffffff;
+    margin: 0 auto;
+    height: 65vh;
+    overflow: hidden;
+  }
+  
+  .carouselItem {
+      height: 100%;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+      /* height: 65vh; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    
+    .carouselText {
+  }
+  .slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    margin-bottom: 50px;
+
+  }
+  

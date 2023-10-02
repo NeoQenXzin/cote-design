@@ -22,6 +22,13 @@
         
         "contactSectionButton": "Contact us"
     },
+    "agence": {
+    "mainTitle": " Space Sculptors, Crafters of Emotions. ",
+    "prezTitle": "About us",
+    "prezContent": "Located in the heart of the historic village of Valbonne,\n Cote Design interior architecture agency specializes in the design, transformation, and renovation of interior and exterior spaces. \n\n\n Brigitte Carteret began her career in the ready-to-wear industry, where she developed her sensitivity to materials and colors. \n Since 1989, she has put all her passion and professional experience at the service of her clients. \n With a project management background, she accompanies each project from conception to completion.",
+    "philosophyTitle": "Our philosophy",
+    "philosophyContent": "Listening to and understanding the needs of each client is at the center of our thinking, and each project is a real encounter.\nAll our work is about combining the beautiful and the useful, creativity and technique.\nThat's why, beyond our concept, we study the feasibility of each project down to the smallest details to untangle constraints and put technique at the service of aesthetics.\nRemodeling volumes, modernizing spaces, redrawing lines, and playing with light, harmonizing colors and materials...\nFrom the structure to the finishing touches, we breathe life into places by prioritizing the well-being of occupants in a timeless atmosphere."
+    }, 
     "footer": {
         "text":"Copyright NQX Pro Design"
     }

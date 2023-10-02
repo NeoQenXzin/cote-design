@@ -60,7 +60,7 @@ export default function accueil(props) {
             <span className={styles.prezContent}>{t("accueil.prezSectionText1")} </span>
             <span className={styles.prezContent}>{t("accueil.prezSectionText2")}</span>
             <span className={styles.prezContent}>{t("accueil.prezSectionText3")}</span>
-            <BoutonLink link='services' textButton={t("accueil.prezSectionButton")} />
+            <BoutonLink link='agence' textButton={t("accueil.prezSectionButton")} />
 
           </div>
         </section>
