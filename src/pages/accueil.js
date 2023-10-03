@@ -8,7 +8,6 @@ import buttonExploreDown from '../../public/assets/icones/icon-explore-down.png'
 import styles from '../styles/Accueil.module.css'
 import { useTranslation } from 'react-i18next';
 //Components
-import Accordeon from '../Component/Accordeon/Accordeon'
 import AccordeonPlus from '../Component/AccordeonPlus/AccordeonPlus'
 import Gallery from '../Component/Gallery/Gallery'
 import BoutonLink from '../Component/BoutonLink/BoutonLink'
@@ -16,7 +15,7 @@ import BoutonLink from '../Component/BoutonLink/BoutonLink'
 export default function accueil(props) {
 
   // Traduction
-  const { t } = useTranslation('en');
+  const { t } = useTranslation();
   //  State Accordeon 
   const [accordeonStates, setAccordeonStates] = useState([true, false, false]);
 
@@ -25,9 +24,6 @@ export default function accueil(props) {
     setAccordeonStates(newStates);
   };
 
-  const tab = [2, 4, 6]
-  const result = tab.map((e, i, t) => console.log(t))
-  // console.log(result);
   return (
     <>
       <Head>
@@ -106,26 +102,7 @@ export default function accueil(props) {
             />
           </div>
         </section>
-        {/* <section className={styles.accordeon}>
-          <div className={styles.containerAccordeonSectionImg}></div>
-          <div className={styles.containerAccordeonSection}>
-          <h2>Nos services</h2>
-            <ul>
-              <Accordeon state={true} title='Etude projet' content='Rencontre avec le client
-                Visite des lieux 
-                Définition du cahier des charges et du budget
 
-                Etude de faisabilité
-                Relevé détat des lieux'/>
-              <Accordeon state={false} title='Mise en Oeuvre' content='Avant projet définitif
-                Présentation en plans et en 3D du projet
-                Mise en place du projet définitif'/>
-              <Accordeon state={false} title='Gestion et planning' content='Mise en œuvre du projet
-                Coordination des travaux et réunions de chantier
-                Gestion des plannings'/>
-            </ul>
-          </div>
-        </section> */}
         <div className={styles.contactSection}>
           <BoutonLink link='contact' textButton={t("accueil.contactSectionButton")} />
         </div>

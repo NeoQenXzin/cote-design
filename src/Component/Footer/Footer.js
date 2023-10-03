@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import style from './Footer.module.css';
 
 export default function Footer(props) {
-  const { t, i18n } = useTranslation('en');
+  const { t, i18n } = useTranslation();
 
   const handleLangChange = (e) => {
     const lang = e.target.value;

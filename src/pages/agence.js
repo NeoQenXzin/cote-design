@@ -11,7 +11,7 @@ import valueInnov from '../../public/assets/ressources/agence-value-inov.jpg'
 
 export default function agence() {
 
-  const { t } = useTranslation('en');
+  const { t } = useTranslation();
 
 
   const testimonials = [

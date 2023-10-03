@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next"
 export default function Navbar(props) {
     // Destructurer
     const router = useRouter();
-    const { t, i18n } = useTranslation('en');
+    const { t } = useTranslation();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isNavOpen, setIsNavOpen] = useState(false);
 

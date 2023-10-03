@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home(props) {
 
 // Translation library
-  const { t, i18n } = useTranslation('en');
+  const { t, i18n } = useTranslation();
   const setLocaleEn = () => {
     i18n.changeLanguage('en')
   }
@@ -62,7 +62,7 @@ export default function Home(props) {
 
         <div className={styles.logoContainer}>
           <div className={styles.logo}>
-            <div className="logo"><Image className={styles.logoImg} src={img1}/></div>
+            <div className="logo"><Image className={styles.logoImg} src={img1} alt='Logo côté design' priority/></div>
             <div className={styles.textLogo}>ARCHITECTURE & MISE EN OEUVRE</div>
             <div className={styles.textAdress}>
               <p>4 rue Gambetta 06560 Valbonne</p>
@@ -71,13 +71,13 @@ export default function Home(props) {
             <div className={styles.flagContainer}>
               <div className="flag-french">
                 <Link href={'accueil'} onClick={setLocaleFr}>
-                  <Image src={flagFr} width="50" height="35" />
+                  <Image src={flagFr} width="50" height="35" alt='French flag' />
                   <br></br><span> Français</span>
                 </Link>
               </div>
               <div className="flag-english">
                 <Link className='navbar-brand mx-4' href={'/accueil'} onClick={setLocaleEn}>
-                  <Image src={flagEng} width="50" height="35" />
+                  <Image src={flagEng} width="50" height="35" alt='English flag'/>
                   <br></br><span> English</span>
                 </Link>
               </div>
