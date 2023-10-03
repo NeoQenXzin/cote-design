@@ -4,21 +4,21 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 // Localisation 
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
+// import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+// import 'leaflet/dist/leaflet.css';
 import Villa from "../../public/assets/img/villa-contact.jpg"
 import Tel from "../../public/assets/icones/appel.png"
 import Mail from "../../public/assets/icones/message.png"
 import Epingle from "../../public/assets/icones/epingle.png"
 
 // Icon localisation
-const icon = '/assets/icones/marker-icon-2x.png';
-const iconShadow = '/assets/icones/marker-shadow.png';
-L.Icon.Default.mergeOptions({
-    iconRetinaUrl: icon,
-    iconUrl: icon,
-    shadowUrl: iconShadow
-});
+// const icon = '/assets/icones/marker-icon-2x.png';
+// const iconShadow = '/assets/icones/marker-shadow.png';
+// L.Icon.Default.mergeOptions({
+//     iconRetinaUrl: icon,
+//     iconUrl: icon,
+//     shadowUrl: iconShadow
+// });
 
 export default function Contact() {
 
@@ -185,7 +185,7 @@ export default function Contact() {
  </span>
         </div>
 
-        <div className={style.containerMap} style={{ height: '400px', display: 'inline-flex', justifyContent: 'center', margin: '0 auto', maxWidth: '700px', width: '50%' }}>
+        {/* <div className={style.containerMap} style={{ height: '400px', display: 'inline-flex', justifyContent: 'center', margin: '0 auto', maxWidth: '700px', width: '50%' }}>
             <MapContainer center={position} zoom={16} maxZoom={18} scrollWheelZoom={false} style={{ height: '100%', width: '100%' }}>
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -199,7 +199,7 @@ export default function Contact() {
                 </Marker>
             </MapContainer>
 
-        </div>
+        </div> */}
 
                     </div>
                     <div className={style.navigation}>
