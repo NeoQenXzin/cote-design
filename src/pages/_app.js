@@ -1,4 +1,4 @@
-// App.js
+import { Suspense } from 'react';
 import { LanguageProvider } from '../Component/LanguageProvider/LanguageProvider';
 // import { useTranslation } from 'react-i18next';
 // import Navbar from '../Component/Navbar/Navbar';
@@ -11,7 +11,10 @@ export default function App({ Component, pageProps }) {
   return (
     <LanguageProvider>
       {/* <Navbar changeLanguage={(lng) => i18n.changeLanguage(lng)} /> */}
-      <Component {...pageProps} />
+      <Suspense fallback={<div>Chargement...</div>}>
+        <Component {...pageProps} />
+      </Suspense>
+      {/* <Component {...pageProps} /> */}
       {/* <Footer changeLanguage={(lng) => i18n.changeLanguage(lng)} /> */}
     </LanguageProvider>
   );

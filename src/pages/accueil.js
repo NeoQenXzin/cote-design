@@ -6,7 +6,7 @@ import prezImage from '../../public/assets/img/accueil/facade-angle.png'
 // import videoTheme from '../../public/assets/video/accueilDemo.mp4'
 import buttonExploreDown from '../../public/assets/icones/icon-explore-down.png'
 import styles from '../styles/Accueil.module.css'
-import { useTranslation } from 'react-i18next';
+import { useTranslation, i18n } from 'react-i18next';
 //Components
 import AccordeonPlus from '../Component/AccordeonPlus/AccordeonPlus'
 import Gallery from '../Component/Gallery/Gallery'
@@ -23,6 +23,7 @@ export default function accueil(props) {
     const newStates = accordeonStates.map((state, i) => (i === index ? !state : false));
     setAccordeonStates(newStates);
   };
+  // console.log("Langue actuelle :", i18n.language);
 
   return (
     <>
