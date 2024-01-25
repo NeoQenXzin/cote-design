@@ -1,31 +1,28 @@
-import Head from 'next/head'
-import { useState, useEffect } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import img1 from '../../public/assets/logos/logo-accueil.png'
-import flagFr from '../../public/assets/icones/flag-fr.gif'
-import flagEng from '../../public/assets/icones/flag-eng.gif'
-import { Inter } from 'next/font/google'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import img1 from '../../public/assets/logos/logo-accueil.png';
+import flagFr from '../../public/assets/icones/flag-fr.gif';
+import flagEng from '../../public/assets/icones/flag-eng.gif';
+import { Inter } from 'next/font/google';
+import styles from '../styles/Home.module.css';
 import { useTranslation } from 'react-i18next';
 
-
-const inter = Inter({ subsets: ['latin'] })
-
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home(props) {
-
-// Translation library
   const { t, i18n } = useTranslation();
+
   const setLocaleEn = () => {
-    i18n.changeLanguage('en')
-  }
+    i18n.changeLanguage('en');
+  };
+
   const setLocaleFr = () => {
-    i18n.changeLanguage('fr')
-  }
+    i18n.changeLanguage('fr');
+  };
 
-
-  // Diaporama Background 
+  // Diaporama Background
   const backgroundImages = [
     'assets/img/backgroundHome/img0.jpeg',
     'assets/img/backgroundHome/img1.jpeg',
@@ -36,18 +33,30 @@ export default function Home(props) {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
+  // useEffect(() => {
+  //   Précharger les images de fond
+  //   backgroundImages.forEach(imageUrl => {
+  //     const img = new window.Image();
+  //     img.src = imageUrl;
+  //   });
+
+  //   const interval = setInterval(() => {
+  //     setCurrentImageIndex(prevIndex => (prevIndex + 1) % backgroundImages.length);
+  //   }, 4000);
+
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const backgroundImageStyle = {
     backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
   };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex(prevIndex => (prevIndex + 1) % backgroundImages.length);
+    }, 4000); // Durée de chaque image
 
-
+    return () => clearInterval(interval);
+  }, []);
 
 
   return (
@@ -62,7 +71,7 @@ export default function Home(props) {
 
         <div className={styles.logoContainer}>
           <div className={styles.logo}>
-            <div className="logo"><Image className={styles.logoImg} src={img1} alt='Logo côté design' priority/></div>
+            <div className="logo"><Image className={styles.logoImg} src={img1} alt='Logo côté design' priority /></div>
             <div className={styles.textLogo}>ARCHITECTURE & MISE EN OEUVRE</div>
             <div className={styles.textAdress}>
               <p>4 rue Gambetta 06560 Valbonne</p>
@@ -77,7 +86,7 @@ export default function Home(props) {
               </div>
               <div className="flag-english">
                 <Link className='navbar-brand mx-4' href={'/accueil'} onClick={setLocaleEn}>
-                  <Image src={flagEng} width="50" height="35" alt='English flag'/>
+                  <Image src={flagEng} width="50" height="35" alt='English flag' />
                   <br></br><span> English</span>
                 </Link>
               </div>
@@ -87,12 +96,22 @@ export default function Home(props) {
         <h1>Bienvenue sur coté Design</h1>
 
         {/* Background diaporama  */}
-        <section className={styles.backgroundSection}>
-          
-          <div className={`${styles.backgroundImage} ${styles.animate}`}  style={backgroundImageStyle}></div>
-        <div className={styles.scanlines}></div>
-        </section>
+        {/* <section className={styles.backgroundSection}>
+
+          <div className={`${styles.backgroundImage} ${styles.animate}`} style={backgroundImageStyle}></div>
+          <div className={styles.scanlines}></div>
+        </section> */}
         {/* Scanlines  */}
+        <section className={styles.backgroundSection}>
+          {backgroundImages.map((imageUrl, index) => (
+            <div
+              key={index}
+              className={`${styles.backgroundImage} ${currentImageIndex === index ? styles.active : ''}`}
+              style={{ backgroundImage: `url(${imageUrl})` }}
+            ></div>
+          ))}
+          <div className={styles.scanlines}></div>
+        </section>
       </main>
     </>
   )
