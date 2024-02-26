@@ -1,39 +1,41 @@
 {
-    "menu": {
-        "accueil": "Accueil",
-        "agence": "Agence",
-        "contact": "Contact",
-        "projects": "Réalisations"
-    },
-    "accueil": {
-        "prezSectionTextH2": "Notre agence",
-        "prezSectionText1": "Située au cœur du village historique de Valbonne,",
-        "prezSectionText2": "l'agence d'architecture d'intérieur Cote Design est spécialisée dans la conception, ",
-        "prezSectionText3": "la transformation et la rénovation d'espaces intérieurs et extérieurs. ",
-        "prezSectionButton": "Decouvrir l'agence",
-        "gallerySectionButton": "Voir tous nos projets",
-        "accordeonSectionMainTitle": "Notre Expertise",
-        "accordeonSectionTitle1": "Etude projet",
-        "accordeonSectionTitle2": "Mise en Oeuvre",
-        "accordeonSectionTitle3": "Gestion et planning",
-        "accordeonSectionContent1": "Rencontre avec le client \n Visite des lieux \nDéfinition du cahier des charges et du budget \nEtude de faisabilité \nRelevé d'état des lieux",
-        "accordeonSectionContent2": "Avant projet définitif \nPrésentation en plans et en 3D du projet \nMise en place du projet définitif",
-        "accordeonSectionContent3": "Mise en œuvre du projet \nCoordination des travaux et réunions de chantier  \nGestion des plannings",
-        "contactSectionButton": "Nous Contacter",
+  "menu": {
+    "accueil": "Accueil",
+    "agence": "Agence",
+    "contact": "Contact",
+    "projects": "Réalisations"
+  },
+  "accueil": {
+    "prezSectionTextH2": "Notre agence",
+    "prezSectionText1": "Située au cœur du village historique de Valbonne,",
+    "prezSectionText2": "l'agence d'architecture d'intérieur Cote Design est spécialisée dans la conception, ",
+    "prezSectionText3": "la transformation et la rénovation d'espaces intérieurs et extérieurs. ",
+    "prezSectionButton": "Decouvrir l'agence",
+    "gallerySectionButton": "Voir tous nos projets",
+    "accordeonSectionMainTitle": "Notre Expertise",
+    "accordeonSectionTitle1": "Etude projet",
+    "accordeonSectionTitle2": "Mise en Oeuvre",
+    "accordeonSectionTitle3": "Gestion et planning",
+    "accordeonSectionTitle4": "Etude Projet Ecologique",
+    "accordeonSectionContent1": "Rencontre avec le client \n Visite des lieux \nDéfinition du cahier des charges et du budget \nEtude de faisabilité \nRelevé d'état des lieux",
+    "accordeonSectionContent2": "Avant projet définitif \nPrésentation en plans et en 3D du projet \nMise en place du projet définitif\nSuivi des projets tout corps d’état",
+    "accordeonSectionContent3": "Mise en œuvre du projet \nCoordination des travaux et réunions de chantier  \nGestion des plannings\nRéalisation clé en main \nAccompagnement du projet du début à la fin \nPlanning des lots d’exécutions",
+    "accordeonSectionContent4": "Réduction de la consommation énergétique \nCréation d’un systeme thermique confortable et durable  \nEtude et sélection des matériaux, des textures et des couleurs pour un résultat durable et recyclable\n Création de lumière naturelle",
+    "contactSectionButton": "Nous Contacter",
 
-        "version": "Version Française",
-        "prez": "Bienvenu au test de traduction",
-        "prez2": "Ceci est un test de traduction d'une page de notre application. Vous avez 2 choix: Anglais ou Français .",
-        "thanks": "Merci ! :)"
-    },
-    "agence" : {
-        "mainTitle": " Sculpteurs d'Espaces, Artisans d'Émotions. ",
-        "prezTitle": "Qui sommes-nous ?",
-        "prezContent": "Située au cœur du village historique de Valbonne,\n l'agence d'architecture d'intérieur Cote Design est spécialisée dans la conception, la transformation et la rénovation d'espaces intérieurs et extérieurs. \n \n Brigitte Carteret a fait ses débuts dans l'univers du prêt à porter où elle a développé sa sensibilité aux matières et aux couleurs. \n Depuis 1989, elle met toute sa passion et son expérience professionnelle au service de ses clients. \n Dotée d'une maitrise d'œuvre, elle accompagne chaque projet de la conception jusqu'à la réalisation.",
-        "philosophyTitle": "Notre philosophie",
-        "philosophyContent": "L'écoute et la compréhension des besoins de chaque client est au centre de notre réflexion et chaque projet est une vraie rencontre. \nTout notre travail consiste à allier le beau et l'utile, la créativité et la technique. \n C'est pourquoi au delà de notre concept nous étudions la faisabilité de chaque projet jusque dans les moindres détails afin de se démêler des contraintes et de mettre la technique au service de l'esthétique.\n Remodeler les volumes, moderniser les espaces, redessiner les lignes et jouer avec la lumière, harmoniser les couleurs et les matières...\n Du gros œuvre aux finitions nous redonnons vie aux lieux en privilégiant le bien être des occupants dans une ambiance intemporelle."
-    },
-    "footer": {
-        "text":"Copyright NQX Pro Design"
-    }
+    "version": "Version Française",
+    "prez": "Bienvenu au test de traduction",
+    "prez2": "Ceci est un test de traduction d'une page de notre application. Vous avez 2 choix: Anglais ou Français .",
+    "thanks": "Merci ! :)"
+  },
+  "agence": {
+    "mainTitle": " Sculpteurs d'Espaces, Artisans d'Émotions. ",
+    "prezTitle": "Qui sommes-nous ?",
+    "prezContent": "Située au cœur du village historique de Valbonne,\n l'agence d'architecture d'intérieur Cote Design est spécialisée dans la conception, la transformation et la rénovation d'espaces intérieurs et extérieurs. \n \n Brigitte Carteret a fait ses débuts dans l'univers du prêt à porter où elle a développé sa sensibilité aux matières et aux couleurs. \n Depuis 1989, elle met toute sa passion et son expérience professionnelle au service de ses clients. \n Dotée d'une maitrise d'œuvre, elle accompagne chaque projet de la conception jusqu'à la réalisation.",
+    "philosophyTitle": "Notre philosophie",
+    "philosophyContent": "L'écoute et la compréhension des besoins de chaque client est au centre de notre réflexion et chaque projet est une vraie rencontre. \nTout notre travail consiste à allier le beau et l'utile, la créativité et la technique. \n C'est pourquoi au delà de notre concept nous étudions la faisabilité de chaque projet jusque dans les moindres détails afin de se démêler des contraintes et de mettre la technique au service de l'esthétique.\n Remodeler les volumes, moderniser les espaces, redessiner les lignes et jouer avec la lumière, harmoniser les couleurs et les matières...\n Du gros œuvre aux finitions nous redonnons vie aux lieux en privilégiant le bien être des occupants dans une ambiance intemporelle."
+  },
+  "footer": {
+    "text": "Copyright NQX Pro Design"
+  }
 }

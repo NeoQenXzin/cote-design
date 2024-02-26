@@ -8,6 +8,7 @@
     top:0;
     left:0;
     transition: background-color 0.4s ease-out, height 0.4s ease-out;
+    
 
   }
   .navbar:hover{
@@ -16,7 +17,7 @@
 
 .navbar.scroll {
     background: white !important;
-    height: 80px; /* Nouvelle hauteur */
+    height: 90px; /* Nouvelle hauteur */
 }
 .navbar.scroll .navLink {
     z-index: 10;
@@ -25,8 +26,7 @@
     font-weight: bold;
      letter-spacing: 1.5px;
     text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-    /* font-weight: 600; */
+    /* font-family: "Architects Daughter", cursive; */
     transition: color 0.3s;
   }
   .navbar.scroll .navLink:hover, .logo:hover{
@@ -49,7 +49,7 @@
     height: 100%;
     justify-content: space-between;
     align-items: center;
-    max-width: 80vw;
+    max-width: 90vw;
     margin: 0 auto;
     padding: 0 20px;
 }

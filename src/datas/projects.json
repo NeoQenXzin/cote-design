@@ -1,221 +1,390 @@
 {
-    "projects": [
-      {
-        "id": 1,
-        "title": "Projet 1",
-        "backgroundImage": "/assets/ressources/project1-image1.jpeg",
-        "category": "Architecture d'intérieur",
-        "thumbnail": "/assets/ressources/project1-video.mp4",
-        "media": [
-          {
-            "type": "image",
-            "url": "/assets/ressources/project1-image1.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project1-image2.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project1-image3.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project1-image4.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project1-image5.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project1-image6.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project1-image7.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project1-image8.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project1-image9.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project1-image10.jpeg"
-          },
-          {
-            "type": "video",
-            "url": "/assets/ressources/project1-video.mp4"
-          }
-        ],
-        "description": "Description du projet 1...",
-        "location": "Lieu du projet 1",
-        "date": "Date du projet 1"
-      },
-      {
-        "id": 2,
-        "title": "Projet 2",
-        "backgroundImage": "/assets/ressources/project2-image1.jpeg",
-        "category": "Architecture d'intérieur",
-        "thumbnail": "/assets/ressources/project2-image4.jpeg",
-        "media": [
-          {
-            "type": "image",
-            "url": "/assets/ressources/project2-image1.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project2-image3.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project2-image2.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project2-image4.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project2-image5.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project2-image6.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project2-image8.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project2-image7.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project2-image9.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project2-image10.jpeg"
-          }
-        ],
-        "description": "Description du projet 2...",
-        "location": "Lieu du projet 2",
-        "date": "Date du projet 2"
-      },
-      {
-        "id": 3,
-        "title": "Projet 3",
-        "category": "Architecture d'intérieur",
-        "backgroundImage": "/assets/ressources/project3-image1.jpeg",
-        "thumbnail": "/assets/ressources/project3-image1.jpeg",
-        "media": [
-          {
-            "type": "image",
-            "url": "/assets/ressources/project3-image1.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project3-image2.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project3-image3.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project3-image4.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project3-image5.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project3-image6.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project3-image7.jpeg"
-          }
-        ],
-        "description": "Description du projet 3...",
-        "location": "Lieu du projet 3",
-        "date": "Date du projet 3"
-      },
-      {
-        "id": 4,
-        "title": "Projet 4",
-        "category": "Architecture d'intérieur",
-        "backgroundImage": "/assets/ressources/project4-image1.jpeg",
-        "thumbnail": "/assets/ressources/project4-image1.jpeg",
-        "media": [
-          {
-            "type": "image",
-            "url": "/assets/ressources/project4-image1.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project4-image2.jpeg"
-          }
-        ],
-        "description": "Description du projet 4...",
-        "location": "Lieu du projet 4",
-        "date": "Date du projet 4"
-      },{
-        "id": 5,
-        "title": "Projet 5",
-        "category": "Architecture d'intérieur",
-        "backgroundImage": "/assets/ressources/project5-image1.jpeg",
-        "thumbnail": "/assets/ressources/project5-image1.jpeg",
-        "media": [
-          {
-            "type": "image",
-            "url": "/assets/ressources/project5-image1.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project5-image2.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project5-image3.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project5-image4.jpeg"
-          }
-        ],
-        "description": "Description du projet 5...",
-        "location": "Lieu du projet 5",
-        "date": "Date du projet 5"
-      },{
-        "id": 6,
-        "title": "Projet 6",
-        "category": "Architecture d'intérieur",
-        "backgroundImage": "/assets/ressources/project6-image1.jpeg",
-        "thumbnail": "/assets/ressources/project6-image1.jpeg",
-        "media": [
-          {
-            "type": "image",
-            "url": "/assets/ressources/project6-image1.jpeg"
-          },
-          {
-            "type": "image",
-            "url": "/assets/ressources/project6-image2.jpeg"
-          }
-        ],
-        "description": "Description du projet 6...",
-        "location": "Lieu du projet 6",
-        "date": "Date du projet 6"
-      }
-      
-      
-    ]
-  }
-  
+  "projects": [
+    {
+      "id": 1,
+      "title": "Motar",
+      "backgroundImage": "/assets/ressources/project1-image1.jpeg",
+      "category": "Architecture d'intérieur",
+      "thumbnail": "/assets/ressources/project1-video.mp4",
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/ressources/project1-image1.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project1-image2.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project1-image3.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project1-image4.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project1-image5.jpeg"
+        },
+
+        {
+          "type": "video",
+          "url": "/assets/ressources/project1-video.mp4"
+        }
+      ],
+      "description": "Description du projet 1...",
+      "location": "Lieu du projet 1",
+      "date": "Date du projet 1"
+    },
+    {
+      "id": 2,
+      "title": "Projet 2",
+      "backgroundImage": "/assets/ressources/project2-image1.jpeg",
+      "category": "Architecture d'intérieur",
+      "thumbnail": "/assets/ressources/project2-image4.jpeg",
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/ressources/project2-image1.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project2-image3.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project2-image2.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project2-image4.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project2-image5.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project2-image6.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project2-image8.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project2-image7.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project2-image9.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project2-image10.jpeg"
+        }
+      ],
+      "description": "Description du projet 2...",
+      "location": "Lieu du projet 2",
+      "date": "Date du projet 2"
+    },
+    {
+      "id": 3,
+      "title": "Projet 3",
+      "category": "Architecture d'intérieur",
+      "backgroundImage": "/assets/ressources/project3-image1.jpeg",
+      "thumbnail": "/assets/ressources/project3-image1.jpeg",
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/ressources/project3-image1.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project3-image2.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project3-image3.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project3-image4.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project3-image5.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project3-image6.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project3-image7.jpeg"
+        }
+      ],
+      "description": "Description du projet 3...",
+      "location": "Lieu du projet 3",
+      "date": "Date du projet 3"
+    },
+    {
+      "id": 4,
+      "title": "Projet 4",
+      "category": "Architecture d'intérieur",
+      "backgroundImage": "/assets/ressources/project4-image1.jpeg",
+      "thumbnail": "/assets/ressources/project4-image1.jpeg",
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/ressources/project4-image1.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project4-image2.jpeg"
+        }
+      ],
+      "description": "Description du projet 4...",
+      "location": "Lieu du projet 4",
+      "date": "Date du projet 4"
+    },
+    {
+      "id": 5,
+      "title": "Projet 5",
+      "category": "Architecture d'intérieur",
+      "backgroundImage": "/assets/ressources/project5-image1.jpeg",
+      "thumbnail": "/assets/ressources/project5-image1.jpeg",
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/ressources/project5-image1.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project5-image2.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project5-image3.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project5-image4.jpeg"
+        }
+      ],
+      "description": "Description du projet 5...",
+      "location": "Lieu du projet 5",
+      "date": "Date du projet 5"
+    },
+    {
+      "id": 6,
+      "title": "Projet 6",
+      "category": "Architecture d'intérieur",
+      "backgroundImage": "/assets/ressources/project6-image1.jpeg",
+      "thumbnail": "/assets/ressources/project6-image1.jpeg",
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/ressources/project6-image1.jpeg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project6-image2.jpeg"
+        }
+      ],
+      "description": "Description du projet 6...",
+      "location": "Lieu du projet 6",
+      "date": "Date du projet 6"
+    },
+    {
+      "id": 7,
+      "title": "Projet Tertiaire",
+      "backgroundImage": "/assets/ressources/projet7-image1.jpg",
+      "category": "Architecture d'intérieur",
+      "thumbnail": "/assets/ressources/projet7-image1.jpg",
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/ressources/projet7-image1.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/projet7-image2.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/projet7-image3.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/projet7-image4.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/projet7-image5.jpg"
+        }
+      ],
+      "description": "Description du projet 7...",
+      "location": "Mougins",
+      "Superficie": "  du projet 7"
+    },
+    {
+      "id": 8,
+      "title": "Valbonne",
+      "backgroundImage": "/assets/ressources/project8-image1.jpg",
+      "category": "Rénovation d’espace",
+      "thumbnail": "/assets/ressources/project8-image1.jpg",
+
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/ressources/project8-image1.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project8-image2.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project8-image3.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project8-image4.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project8-image5.jpg"
+        }
+      ],
+      "description": "Description du projet 8...",
+      "location": "Mougins",
+      "Superficie": ""
+    },
+    {
+      "id": 9,
+      "title": "Valbonne",
+      "backgroundImage": "/assets/ressources/project9-image1.jpg",
+      "thumbnail": "/assets/ressources/project9-image1.jpg",
+      "category": "Projet en Cours",
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/ressources/project9-image1.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project9-image2.png"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project9-image3.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project9-image4.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project9-image5.png"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project9-image6.png"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project9-image7.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project9-image8.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project9-image9.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project9-image10.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project9-image11.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project9-image12.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project9-image13.jpg"
+        }
+      ],
+      "description": "Description du projet 9...",
+      "location": "Valbonne",
+      "Superficie": ""
+    },
+    {
+      "id": 10,
+      "title": "Grasse",
+      "backgroundImage": "/assets/ressources/project10-image1.jpg",
+      "thumbnail": "/assets/ressources/project10-image1.jpg",
+      "category": "Architecture d'intérieur",
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image1.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image2.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image3.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image4.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image5.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image6.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image7.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image8.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image9.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image10.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image11.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image12.jpg"
+        }
+      ],
+      "description": "Description du projet 10...",
+      "location": "Grasse",
+      "Superficie": ""
+    }
+  ]
+}

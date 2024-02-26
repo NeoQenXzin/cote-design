@@ -12,7 +12,6 @@
     height: auto;
     min-height: 80vh;
     background-color: #F6EEE3;
-    /* margin-top: 200px; */
   }
   
   .titleContainer {
@@ -108,6 +107,7 @@
   .image {
     max-width: 100%;
     height: auto;
+    cursor: pointer;
     /* display: block;
     margin: 0 auto; */
   }

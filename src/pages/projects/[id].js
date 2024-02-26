@@ -57,12 +57,12 @@ export default function ProjectDetails({ project }) {
 
       ) : (
         <a
-        key={index}
-        data-lg-size="1400-933" // Customize the size as needed
-        className={`${"gallery-item"} ${styles.mediaItem} ${styles.videoWrapper}`}
-        data-video={`{"source": [{"src":"${media.url}", "type":"video/mp4"}], "attributes": {"preload": "none", "controls": true}}`}
-      >
-       
+          key={index}
+          data-lg-size="1400-933" // Customize the size as needed
+          className={`${"gallery-item"} ${styles.mediaItem} ${styles.videoWrapper}`}
+          data-video={`{"source": [{"src":"${media.url}", "type":"video/mp4"}], "attributes": {"preload": "none", "controls": true}}`}
+        >
+
           {!isVideoFullscreen ? (
             <a
               key={index}
@@ -70,7 +70,7 @@ export default function ProjectDetails({ project }) {
               className={` ${styles.video}`}
               data-video={`{"source": [{"src":"${media.url}", "type":"application/x-mpegURL"}], "attributes": {"preload": false, "controls": true}}'`}
             >
-              <video src={media.url} autoPlay loop muted playsInline className={styles.video}/>
+              <video src={media.url} autoPlay loop muted playsInline className={styles.video} />
             </a>
           ) : (
 
@@ -111,16 +111,17 @@ export default function ProjectDetails({ project }) {
       </div>
 
 
-    
-        <LightGallery
-          onInit={onInit}
-          speed={500}
-          plugins={[lgVideo, lgZoom, lgThumbnail]}
-          elementClassNames={`${"custom-class-name"} ${styles.mediaContainer}`}
-        >
-          {getItems()}
-        </LightGallery>
-      
+
+      <LightGallery
+        onInit={onInit}
+        speed={500}
+        download={false}
+        plugins={[lgVideo, lgZoom, lgThumbnail]}
+        elementClassNames={`${"custom-class-name"} ${styles.mediaContainer}`}
+      >
+        {getItems()}
+      </LightGallery>
+
       {/* Navigation */}
       <div className={styles.navigation}>
         <Link href="/projects">

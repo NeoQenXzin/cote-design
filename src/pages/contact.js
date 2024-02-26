@@ -1,26 +1,48 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import style from '../styles/Contact.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
+
 // Localisation 
+import dynamic from 'next/dynamic'; // gerer l'asynchrone ssr
 // import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-// import 'leaflet/dist/leaflet.css';
+import 'leaflet/dist/leaflet.css';
 import Villa from "../../public/assets/img/villa-contact.jpg"
 import Tel from "../../public/assets/icones/appel.png"
 import Mail from "../../public/assets/icones/message.png"
 import Epingle from "../../public/assets/icones/epingle.png"
 
+
 // Icon localisation
-// const icon = '/assets/icones/marker-icon-2x.png';
-// const iconShadow = '/assets/icones/marker-shadow.png';
-// L.Icon.Default.mergeOptions({
-//     iconRetinaUrl: icon,
-//     iconUrl: icon,
-//     shadowUrl: iconShadow
-// });
+const icon = '/assets/icones/marker-icon-2x.png';
+const iconShadow = '/assets/icones/marker-shadow.png';
+
+// Importer Leaflet dynamiquement avec SSR désactivé
+// const MapContainer = dynamic(() => import('react-leaflet').then(mod => mod.MapContainer), { ssr: false });
+// const TileLayer = dynamic(() => import('react-leaflet').then(mod => mod.TileLayer), { ssr: false });
+// const Marker = dynamic(() => import('react-leaflet').then(mod => mod.Marker), { ssr: false });
+// const Popup = dynamic(() => import('react-leaflet').then(mod => mod.Popup), { ssr: false });
 
 export default function Contact() {
+
+    //gestion du rechargement de la page 
+    // const [isClient, setIsClient] = useState(false);
+    // useEffect(() => {
+    //     console.log(icon);
+    //     setIsClient(true);
+    //     if (typeof window !== 'undefined' && typeof L !== 'undefined') {
+
+    //         L.Icon.Default.mergeOptions({
+    //             iconRetinaUrl: icon,
+    //             iconUrl: icon,
+    //             shadowUrl: iconShadow
+    //         });
+    //     }
+
+    // }, []);
+
+    // Fin gestion du rechargement de la page
 
     const [formData, setFormData] = useState({
         nom: '',
@@ -109,6 +131,7 @@ export default function Contact() {
     return (<>
         <div className={style.main}>
             <div className={style.containerImage}>
+
                 <Image className={style.imgContact} src={Villa} alt="villa" fill objectFit='cover' />
             </div>
             <div className={style.containerContact}>
@@ -157,91 +180,91 @@ export default function Contact() {
         </div>
 
         <div className={style.separation}></div>
-            <span className={style.infoEntreprise}>
-                    Côté Design II <br></br>
-                    {/* Architecte d'Intérieur <br></br>
+        <span className={style.infoEntreprise}>
+            Côté Design II <br></br>
+            {/* Architecte d'Intérieur <br></br>
                     Mise en oeuvre */}
-                    </span>
-<div className={style.containerLast}>
+        </span>
+        <div className={style.containerLast}>
 
-        <div className={style.infosContact}>
-            <span className={style.infoAdresse}>
-                <Image className={style.imgContactSpan} src={Epingle} alt="villa" />
+            <div className={style.infosContact}>
+                <span className={style.infoAdresse}>
+                    <Image className={style.imgContactSpan} src={Epingle} alt="villa" />
                     4 rue Gambetta <br></br>
                     06560 Valbonne</span>
-            <span className={style.infocontact}>
-            <Image className={style.imgContactSpan} src={Tel} alt="villa" />
+                <span className={style.infocontact}>
+                    <Image className={style.imgContactSpan} src={Tel} alt="villa" />
                     Brigitte Carteret :
                     +33 (0)6 09 27 60 15
                     <br></br> <br></br>
                     {/* </span>
             <span className={style.infocontact}> */}
-                Louise Mampaey :
-                +33 (0)6 09 27 59 72
+                    Louise Mampaey :
+                    +33 (0)6 09 27 59 72
                 </span>
-            <span className={style.infoMail}>
-            <Image className={style.imgContactSpan} src={Mail} alt="villa" />
-            <a href="mailto:cote-design06@orange.fr">cote-design06@orange.fr</a>
- </span>
+                <span className={style.infoMail}>
+                    <Image className={style.imgContactSpan} src={Mail} alt="villa" />
+                    <a href="mailto:cote-design06@orange.fr">cote-design06@orange.fr</a>
+                </span>
+            </div>
+            {/* {isClient && (
+                <div className={style.containerMap} style={{ height: '400px', display: 'inline-flex', justifyContent: 'center', margin: '0 auto', maxWidth: '700px', width: '50%' }}>
+                    <MapContainer center={position} zoom={16} maxZoom={18} scrollWheelZoom={false} style={{ height: '100%', width: '100%' }}>
+                        <TileLayer
+                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                            attribution="&copy; OpenStreetMap contributors"
+                        />
+                        <Marker position={position} />
+                        <Marker position={position}>
+                            <Popup>
+                                4 rue Gambetta, 06560 Valbonne, FRANCE
+                            </Popup>
+                        </Marker>
+                    </MapContainer>
+
+                </div>
+            )} */}
         </div>
+        <div className={style.navigation}>
+            <Link href="/accueil">
+                <svg
+                    className={`${style.arrowIcon} ${style.leftArrow}`}
+                    fill="#625b5b"
+                    height="212px"
+                    width="212px"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 476.21 476.21"
+                    xmlSpace="preserve"
+                    stroke="#625b5b"
+                    strokeWidth="0.004762130000000001"
+                >
+                    <polygon points="476.213,223.107 76.212,223.107 76.212,161.893 0,238.108 76.212,314.32 76.212,253.107 476.213,253.107"></polygon>
+                </svg>
+                Retourner a la page d'accueil
+            </Link>
+            <Link href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                <svg
+                    className={`${style.arrowIcon} ${style.upwardArrow}`}
+                    fill="#625b5b"
+                    height="212px"
+                    width="212px"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 476.21 476.21"
+                    xmlSpace="preserve"
+                    stroke="#625b5b"
+                    strokeWidth="0.004762130000000001"
+                    transform="rotate(270)matrix(-1, 0, 0, -1, 0, 0)"
+                >
+                    <polygon points="476.213,223.107 76.212,223.107 76.212,161.893 0,238.108 76.212,314.32 76.212,253.107 476.213,253.107"></polygon>
+                </svg>
 
-        {/* <div className={style.containerMap} style={{ height: '400px', display: 'inline-flex', justifyContent: 'center', margin: '0 auto', maxWidth: '700px', width: '50%' }}>
-            <MapContainer center={position} zoom={16} maxZoom={18} scrollWheelZoom={false} style={{ height: '100%', width: '100%' }}>
-                <TileLayer
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    attribution="&copy; OpenStreetMap contributors"
-                    />
-                <Marker position={position} />
-                <Marker position={position}>
-                    <Popup>
-                        4 rue Gambetta, 06560 Valbonne, FRANCE
-                    </Popup>
-                </Marker>
-            </MapContainer>
-
-        </div> */}
-
-                    </div>
-                    <div className={style.navigation}>
-        <Link href="/accueil">  
-        <svg
-            className={`${style.arrowIcon} ${style.leftArrow}`}
-            fill="#625b5b"
-            height="212px"
-            width="212px"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 476.21 476.21"
-            xmlSpace="preserve"
-            stroke="#625b5b"
-            strokeWidth="0.004762130000000001"
-          >
-            <polygon points="476.213,223.107 76.212,223.107 76.212,161.893 0,238.108 76.212,314.32 76.212,253.107 476.213,253.107"></polygon>
-          </svg>
-            Retourner a la page d'accueil
-        </Link>
-        <Link href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-        <svg
-            className={`${style.arrowIcon} ${style.upwardArrow}`}
-            fill="#625b5b"
-            height="212px"
-            width="212px"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 476.21 476.21"
-            xmlSpace="preserve"
-            stroke="#625b5b"
-            strokeWidth="0.004762130000000001"
-            transform="rotate(270)matrix(-1, 0, 0, -1, 0, 0)"
-          >
-            <polygon points="476.213,223.107 76.212,223.107 76.212,161.893 0,238.108 76.212,314.32 76.212,253.107 476.213,253.107"></polygon>
-          </svg>
-       
-          Remonter en haut
-        </Link>
-      </div>
+                Remonter en haut
+            </Link>
+        </div>
     </>
     );
 }

@@ -13,13 +13,17 @@ import { useTranslation } from "react-i18next"
 export default function Navbar(props) {
     // Destructurer
     const router = useRouter();
-    const { t } = useTranslation();
+    const { t, ready } = useTranslation();
+    const [translationsReady, setTranslationsReady] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const [isNavOpen, setIsNavOpen] = useState(false);
+
 
     const toggleNav = () => {
         setIsNavOpen(!isNavOpen);
     };
+
+
 
 
     useEffect(() => {
@@ -43,6 +47,15 @@ export default function Navbar(props) {
         }
     }, [router.pathname]);
 
+    useEffect(() => {
+        if (ready) {
+            setTranslationsReady(true);
+        }
+    }, [ready]);
+
+    if (!translationsReady) {
+        return null; // ou un composant de chargement si vous en avez un
+    }
     const logoUrl = isScrolled ? logoDark : logoLight;
 
     return (
@@ -67,7 +80,7 @@ export default function Navbar(props) {
                         <span className={`${isScrolled ? style.scrollIconBar : style.iconBar}`}></span>
                         <span className={`${isScrolled ? style.scrollIconBar : style.iconBar}`}></span>
                     </button>
-                    <ul className={`${style.navLinks} ${isNavOpen ? style.open : ""}`}             onClick={toggleNav}>
+                    <ul className={`${style.navLinks} ${isNavOpen ? style.open : ""}`} onClick={toggleNav}>
                         <li className={style.navItem}>
                             <Link href={"/accueil"} className={style.navLink}>
                                 {t("menu.accueil")}
