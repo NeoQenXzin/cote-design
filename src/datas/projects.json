@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 1,
-      "title": "Motar",
+      "title": "Projet1",
       "backgroundImage": "/assets/ressources/project1-image1.jpeg",
       "category": "Architecture d'intérieur",
       "thumbnail": "/assets/ressources/project1-video.mp4",
@@ -271,7 +271,7 @@
       "media": [
         {
           "type": "image",
-          "url": "/assets/ressources/project9-image1.jpg"
+          "url": "/assets/ressources/project9-image8.jpg"
         },
         {
           "type": "image",
@@ -299,7 +299,7 @@
         },
         {
           "type": "image",
-          "url": "/assets/ressources/project9-image8.jpg"
+          "url": "/assets/ressources/project9-image1.jpg"
         },
         {
           "type": "image",
@@ -329,8 +329,8 @@
     {
       "id": 10,
       "title": "Grasse",
-      "backgroundImage": "/assets/ressources/project10-image1.jpg",
-      "thumbnail": "/assets/ressources/project10-image1.jpg",
+      "backgroundImage": "/assets/ressources/project10-image9.jpg",
+      "thumbnail": "/assets/ressources/project10-image9.jpg",
       "category": "Architecture d'intérieur",
       "media": [
         {

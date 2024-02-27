@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import style from '../styles/Contact.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-
+import MapComponent from '../Component/MapComponent/MapComponent';
 
 // Localisation 
 import dynamic from 'next/dynamic'; // gerer l'asynchrone ssr
@@ -18,29 +18,18 @@ import Epingle from "../../public/assets/icones/epingle.png"
 const icon = '/assets/icones/marker-icon-2x.png';
 const iconShadow = '/assets/icones/marker-shadow.png';
 
-// Importer Leaflet dynamiquement avec SSR désactivé
-// const MapContainer = dynamic(() => import('react-leaflet').then(mod => mod.MapContainer), { ssr: false });
-// const TileLayer = dynamic(() => import('react-leaflet').then(mod => mod.TileLayer), { ssr: false });
-// const Marker = dynamic(() => import('react-leaflet').then(mod => mod.Marker), { ssr: false });
-// const Popup = dynamic(() => import('react-leaflet').then(mod => mod.Popup), { ssr: false });
 
 export default function Contact() {
 
     //gestion du rechargement de la page 
-    // const [isClient, setIsClient] = useState(false);
-    // useEffect(() => {
-    //     console.log(icon);
-    //     setIsClient(true);
-    //     if (typeof window !== 'undefined' && typeof L !== 'undefined') {
+    const [isClient, setIsClient] = useState(false);
+    useEffect(() => {
 
-    //         L.Icon.Default.mergeOptions({
-    //             iconRetinaUrl: icon,
-    //             iconUrl: icon,
-    //             shadowUrl: iconShadow
-    //         });
-    //     }
+        setIsClient(true);
 
-    // }, []);
+
+
+    }, []);
 
     // Fin gestion du rechargement de la page
 
@@ -125,9 +114,6 @@ export default function Contact() {
         return isValid;
     };
 
-    // Adresse carte localisation 
-    const position = [43.614213, 7.047299]; // Latitude et longitude
-
     return (<>
         <div className={style.main}>
             <div className={style.containerImage}>
@@ -207,23 +193,13 @@ export default function Contact() {
                     <a href="mailto:cote-design06@orange.fr">cote-design06@orange.fr</a>
                 </span>
             </div>
-            {/* {isClient && (
-                <div className={style.containerMap} style={{ height: '400px', display: 'inline-flex', justifyContent: 'center', margin: '0 auto', maxWidth: '700px', width: '50%' }}>
-                    <MapContainer center={position} zoom={16} maxZoom={18} scrollWheelZoom={false} style={{ height: '100%', width: '100%' }}>
-                        <TileLayer
-                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                            attribution="&copy; OpenStreetMap contributors"
-                        />
-                        <Marker position={position} />
-                        <Marker position={position}>
-                            <Popup>
-                                4 rue Gambetta, 06560 Valbonne, FRANCE
-                            </Popup>
-                        </Marker>
-                    </MapContainer>
 
+            {isClient && (
+                <div className={style.containerMap} style={{ height: '400px', display: 'inline-flex', justifyContent: 'center', margin: '0 auto', maxWidth: '700px', width: '50%' }}>
+                    <MapComponent position={[43.614213, 7.047299]} />
                 </div>
-            )} */}
+            )}
+
         </div>
         <div className={style.navigation}>
             <Link href="/accueil">
