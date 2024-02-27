@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from 'react-icons/fa'; // Import de l'icône Instagram
 import style from './Footer.module.css';
 import Image from 'next/image';
-import LogoLight from '../../../public/assets/logos/LogoLight.png'
+import LogoLight from 'public/assets/logos/logoLight.png'
 import Link from 'next/link';
 
 export default function Footer(props) {
