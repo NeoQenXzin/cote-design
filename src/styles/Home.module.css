@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translate(-115% , -20%);
+  /* transform: translate(-115% , -20%); */
   padding: 20px;
   /* border: double 5px #0e182d; */
   border-radius: 10px;
@@ -161,10 +161,10 @@
 @media (max-width: 1531px) and (min-width:1180px) {
   .main{
     
-    align-items:flex-start;
+    /* align-items:flex-start;
     padding-left: 30px;
     justify-content: space-evenly;
-    flex-direction: column;
+    flex-direction: column; */
   }
 }
 
