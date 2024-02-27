@@ -2,7 +2,8 @@ import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import img1 from '../../public/assets/logos/logo-accueil.png';
+// import img1 from '../../public/assets/logos/logoLight.png';
+import img1 from '../../public/assets/logos/logoDark.png';
 import flagFr from '../../public/assets/icones/flag-fr.gif';
 import flagEng from '../../public/assets/icones/flag-eng.gif';
 import { Inter } from 'next/font/google';
@@ -32,20 +33,6 @@ export default function Home(props) {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  // useEffect(() => {
-  //   Précharger les images de fond
-  //   backgroundImages.forEach(imageUrl => {
-  //     const img = new window.Image();
-  //     img.src = imageUrl;
-  //   });
-
-  //   const interval = setInterval(() => {
-  //     setCurrentImageIndex(prevIndex => (prevIndex + 1) % backgroundImages.length);
-  //   }, 4000);
-
-  //   return () => clearInterval(interval);
-  // }, []);
 
   const backgroundImageStyle = {
     backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
@@ -78,22 +65,22 @@ export default function Home(props) {
             </div>
 
             <div className={styles.flagContainer}>
-              <div className="flag-french">
+              <div >
                 <Link href={'accueil'} onClick={setLocaleFr}>
-                  <Image src={flagFr} width="50" height="35" alt='French flag' />
-                  <br></br><span> Français</span>
+                  <Image className={styles.flagFrench} src={flagFr} width="70" height="49" alt='French flag' />
+                  <br></br><span> Fr</span>
                 </Link>
               </div>
               <div className="flag-english">
                 <Link className='navbar-brand mx-4' href={'/accueil'} onClick={setLocaleEn}>
-                  <Image src={flagEng} width="50" height="35" alt='English flag' />
-                  <br></br><span> English</span>
+                  <Image className={styles.flagFrench} src={flagEng} width="70" height="49" alt='English flag' />
+                  <br></br><span> Eng</span>
                 </Link>
               </div>
             </div>
           </div>
         </div>
-        <h1>Bienvenue sur coté Design</h1>
+        {/* <h1>Bienvenue sur coté Design</h1> */}
 
         {/* Background diaporama  */}
         {/* <section className={styles.backgroundSection}>
@@ -102,16 +89,19 @@ export default function Home(props) {
           <div className={styles.scanlines}></div>
         </section> */}
         {/* Scanlines  */}
-        <section className={styles.backgroundSection}>
-          {backgroundImages.map((imageUrl, index) => (
-            <div
-              key={index}
-              className={`${styles.backgroundImage} ${currentImageIndex === index ? styles.active : ''}`}
-              style={{ backgroundImage: `url(${imageUrl})` }}
-            ></div>
-          ))}
-          <div className={styles.scanlines}></div>
-        </section>
+        <div className={styles.container}>
+
+          <section className={styles.backgroundSection}>
+            {backgroundImages.map((imageUrl, index) => (
+              <div
+                key={index}
+                className={`${styles.backgroundImage} ${currentImageIndex === index ? styles.active : ''}`}
+                style={{ backgroundImage: `url(${imageUrl})` }}
+              ></div>
+            ))}
+            <div className={styles.scanlines}></div>
+          </section>
+        </div>
       </main>
     </>
   )
