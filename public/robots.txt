@@ -1,0 +1,13 @@
+# robots.txt for http://www.cotedesign06.com/
+
+# Allow all crawlers complete access
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: http://www.cotedesign06.com/sitemap.xml
+
+# Optionally, you can disallow crawling of certain paths. For example, if you have admin areas or sensitive directories you don't want search engines to index, you can disallow them here.
+# Disallow: /admin/
+# Disallow: /login/
+

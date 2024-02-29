@@ -26,18 +26,19 @@ export default function Footer(props) {
 
   return (
     <div className={style.footer}>
-
-      <Image src={LogoLight} className={style.logoFooter} alt="Logo" />
+      <div className="">
+        <Image src={LogoLight} className={style.logoFooter} alt="Logo" />
+      </div>
       <div className={style.footerTop}>
 
         <Link href={'/contact'}>Contact</Link> - Mention Légales - FAQ
 
         <p>
           <div className={style.socialMedia}>
-            <a href="https://facebook.com/votrecompte" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/CoteDesign.BrigitteCarteret/" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
             </a>
-            <a href="https://instagram.com/votrecompte" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/cotedesign06/" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
             <a href="https://linkedin.com/in/votrecompte" target="_blank" rel="noopener noreferrer">

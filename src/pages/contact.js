@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import style from '../styles/Contact.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head'
+
 import MapComponent from '../Component/MapComponent/MapComponent';
 
 // Localisation 
@@ -115,6 +117,13 @@ export default function Contact() {
     };
 
     return (<>
+        <Head>
+            <title>Contactez Coté Design | Architecture et Mise en Oeuvre</title>
+            <meta name="description" content="Contactez Coté Design pour discuter de vos projets d'architecture et de mise en œuvre. Que ce soit pour une construction neuve, une rénovation ou un projet d'intérieur, notre équipe à Valbonne est prête à vous accompagner. Trouvez nos coordonnées ici." />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
+
         <div className={style.main}>
             <div className={style.containerImage}>
 

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      
+          <url>
+            <loc>http://www.cotedesign06.com/accueil</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.7</priority>
+          </url>
+        
+          <url>
+            <loc>http://www.cotedesign06.com/agence</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.7</priority>
+          </url>
+        
+          <url>
+            <loc>http://www.cotedesign06.com/contact</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.7</priority>
+          </url>
+        
+          <url>
+            <loc>http://www.cotedesign06.com</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.7</priority>
+          </url>
+        
+          <url>
+            <loc>http://www.cotedesign06.com/projects</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.7</priority>
+          </url>
+        
+    </urlset>

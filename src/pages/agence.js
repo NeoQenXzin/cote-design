@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import styles from '../styles/Agence.module.css'
 import Carousel from '../Component/Carousel/Carousel'
 import { useTranslation } from 'react-i18next';
@@ -21,7 +22,14 @@ export default function agence() {
     // Ajoutez d'autres avis au besoin
   ];
 
-  return (
+  return (<>
+    <Head>
+      <title>L'Agence Coté Design - Vos Projets Architecturaux et de Design</title>
+      <meta name="description" content="Découvrez l'agence Coté Design, où créativité, innovation, et excellence définissent notre approche de chaque projet d'architecture et de design. Notre équipe dédiée à Valbonne s'engage à respecter l'environnement tout en collaborant étroitement avec vous pour réaliser vos visions." />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+
     <main className={styles.main}>
 
       <section className={styles.sectionMainTitle}>
@@ -59,8 +67,8 @@ export default function agence() {
 
 
         <div className={`${styles.valueContainer} ${styles.valueContainerResp1}`}>
-          <div className={`${styles.imageContainer} ${styles.imgValueContainer1}`}> 
-          <Image className={styles.imageContainerImg} src={valueExel}/>
+          <div className={`${styles.imageContainer} ${styles.imgValueContainer1}`}>
+            <Image className={styles.imageContainerImg} src={valueExel} />
           </div>
           <div className={`${styles.textValueContainer1} ${styles.textValue}`}>
             <h3>Créativité Innovante:</h3>
@@ -77,12 +85,12 @@ export default function agence() {
             </p>
           </div>
           <div className={`${styles.imageContainer} ${styles.imgValueContainer2}`}>
-          <Image className={styles.imageContainerImg} src={valueCrea}/>
+            <Image className={styles.imageContainerImg} src={valueCrea} />
           </div>
         </div>
         <div className={`${styles.valueContainer} ${styles.valueContainerResp3}`}>
           <div className={`${styles.imageContainer} ${styles.imgValueContainer3}`}>
-          <Image className={styles.imageContainerImg} src={valueEco}/>
+            <Image className={styles.imageContainerImg} src={valueEco} />
           </div>
           <div className={styles.textValueContainer3}>
             <h3>Respect de l'Environnement:</h3>
@@ -99,12 +107,12 @@ export default function agence() {
             </p>
           </div>
           <div className={`${styles.imageContainer} ${styles.imgValueContainer4}`}>
-          <Image className={styles.imageContainerImg} src={valueTeam}/>
+            <Image className={styles.imageContainerImg} src={valueTeam} />
           </div>
         </div>
         <div className={`${styles.valueContainer} ${styles.valueContainerResp5}`}>
           <div className={`${styles.imageContainer} ${styles.imgValueContainer5}`}>
-          <Image className={styles.imageContainerImg} src={valueInnov}/>
+            <Image className={styles.imageContainerImg} src={valueInnov} />
           </div>
           <div className={styles.textValueContainer5}>
             <h3>Innovation Technologique:</h3>
@@ -120,5 +128,6 @@ export default function agence() {
         <Carousel testimonials={testimonials} />
       </section>
     </main>
+  </>
   )
 }

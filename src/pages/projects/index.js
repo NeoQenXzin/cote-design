@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import styles from "./Projects.module.css";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
@@ -20,6 +21,13 @@ export default function Projects() {
 
   return (
     <>
+      <Head>
+        <title>Nos Projets - Coté Design</title>
+        <meta name="description" content="Explorez notre portfolio de projets chez Coté Design. Découvrez nos réalisations en architecture et design d'intérieur qui mettent en valeur notre créativité, notre attention aux détails et notre engagement envers la durabilité et l'innovation." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <NavbarProjects />
       <div className={styles.globalContainer}>
         {/* <h1>Nos Projets</h1> */}
@@ -54,7 +62,7 @@ export default function Projects() {
             })}
           </div>
         </div>
-        <FooterProject  countProject={nbreProject}/>
+        <FooterProject countProject={nbreProject} />
       </div>
     </>
   );

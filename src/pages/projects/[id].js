@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Head from 'next/head';
 import styles from './Projects.module.css';
 import Link from 'next/link';
 // LightGallery
@@ -91,6 +92,14 @@ export default function ProjectDetails({ project }) {
 
   return (
     <div className={styles.projectDetails}>
+      <Head>
+        <title>{project.title} - Coté Design</title>
+        <meta name="description" content={`${project.description.substring(0, 150)}...`} />
+        <meta name="keywords" content="Architecture, Design Intérieur, Décoration, Rénovation, Architecture Durable, Design de Luxe, Éco-responsable, Architecture Moderne, Planification d'Espace, Solutions de Design Personnalisées, Intérieurs Contemporains, Design Résidentiel, Design Commercial, Design Urbain, Architecture Paysagère, Gestion de Projet, Design Créatif, Architecture Innovante, Espaces Fonctionnels, Design Environnemental, Consultation de Design, Bâtiments Écoénergétiques, Design Minimaliste, Intérieurs Sur Mesure, Architecture Culturelle, Réutilisation Adaptative, Intérieurs Artistiques, Restauration de Bâtiments, Styling Intérieur, Visualisation Architecturale" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       {/* Header  */}
       <div className={styles.header}>
         <div className={styles.backgroundImage} style={{ backgroundImage: `url(${project.backgroundImage})` }} />

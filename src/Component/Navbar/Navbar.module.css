@@ -171,7 +171,7 @@
         width: 110px;
       }
     .navLink {
-      font-family: 'Mukta', sans-serif;
+      /* font-family: 'Mukta', sans-serif; */
       font-size: 18px;
       font-weight: bold;
       color: #333;
