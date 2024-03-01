@@ -40,7 +40,7 @@ export default function accueil(props) {
       <main className={styles.main}>
         <section className={styles.mainSection}>
           <video className={styles.videoBackground} autoPlay muted loop>
-            <source src='/assets/video/accueil.mp4' type="video/mp4" />
+            <source src='/assets/video/accueilMain.mp4' type="video/mp4" />
           </video>
           <button className={styles.buttonExplore} onClick={() => {
             window.scrollBy(0, window.innerHeight);
