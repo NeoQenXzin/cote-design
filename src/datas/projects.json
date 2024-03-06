@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "title": "Projet 2",
+      "title": "Le Rouret",
       "backgroundImage": "/assets/ressources/project2-image1.jpeg",
       "category": "Architecture d'intérieur",
       "thumbnail": "/assets/ressources/project2-image4.jpeg",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "title": "Projet 3",
+      "title": "Théoule-sur-Mer",
       "category": "Architecture d'intérieur",
       "backgroundImage": "/assets/ressources/project3-image1.jpeg",
       "thumbnail": "/assets/ressources/project3-image1.jpeg",
@@ -159,7 +159,7 @@
     },
     {
       "id": 4,
-      "title": "Projet 4",
+      "title": "Valbonne",
       "category": "Architecture d'intérieur",
       "backgroundImage": "/assets/ressources/project4-image1.jpeg",
       "thumbnail": "/assets/ressources/project4-image1.jpeg",
@@ -179,7 +179,7 @@
     },
     {
       "id": 5,
-      "title": "Projet 5",
+      "title": "Le Rouret",
       "category": "Architecture d'intérieur",
       "backgroundImage": "/assets/ressources/project5-image1.jpeg",
       "thumbnail": "/assets/ressources/project5-image1.jpeg",
@@ -207,7 +207,7 @@
     },
     {
       "id": 6,
-      "title": "Projet 6",
+      "title": "Valbonne",
       "category": "Architecture d'intérieur",
       "backgroundImage": "/assets/ressources/project6-image1.jpeg",
       "thumbnail": "/assets/ressources/project6-image1.jpeg",

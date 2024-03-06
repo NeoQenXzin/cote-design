@@ -19,6 +19,10 @@ export default function agence() {
     { id: 1, content: "Super équipe, à l'écoute et très professionnelle. Nous adorons la maison, merci beaucoup pour votre travail." },
     { id: 2, content: 'Très bon service, merci pour votre travail.' },
     { id: 3, content: "Super équipe, à l'écoute et très professionnelle" },
+    { id: 5, content: "On se posait des questions sur l'aménagement d'une partie de notre maison, nous avons reçu de très bonnes idées et conseils. Je vous recommande leurs services." },
+    { id: 6, content: "Service projet architecture , conseil au top . tres professionnel A recommander" },
+    { id: 7, content: "Une équipe très à l'écoute des clients , de la créativité et du conseil ." },
+    { id: 4, content: "Nous avons fait appel à Coté Design dans le cadre de réaménagement de locaux professionnel et avons été pleinement satisfait du service rendu. De plus, l'accueil et l’accompagnement tout au long du projet ont été particulièrement appréciés." },
     // Ajoutez d'autres avis au besoin
   ];
 
