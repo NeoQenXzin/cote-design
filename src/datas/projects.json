@@ -2,37 +2,65 @@
   "projects": [
     {
       "id": 1,
-      "title": "Projet1",
-      "backgroundImage": "/assets/ressources/project1-image1.jpeg",
+      "title": "Grasse",
+      "backgroundImage": "/assets/ressources/project10-image9.jpg",
       "category": "Architecture d'intérieur",
-      "thumbnail": "/assets/ressources/project1-video.mp4",
+      "thumbnail": "/assets/video/accueil.mp4",
       "media": [
         {
           "type": "image",
-          "url": "/assets/ressources/project1-image1.jpeg"
+          "url": "/assets/ressources/project10-image1.jpg"
         },
         {
           "type": "image",
-          "url": "/assets/ressources/project1-image2.jpeg"
+          "url": "/assets/ressources/project10-image2.jpg"
         },
         {
           "type": "image",
-          "url": "/assets/ressources/project1-image3.jpeg"
+          "url": "/assets/ressources/project10-image3.jpg"
         },
         {
           "type": "image",
-          "url": "/assets/ressources/project1-image4.jpeg"
+          "url": "/assets/ressources/project10-image4.jpg"
         },
         {
           "type": "image",
-          "url": "/assets/ressources/project1-image5.jpeg"
+          "url": "/assets/ressources/project10-image5.jpg"
         },
-
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image6.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image7.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image8.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image9.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image10.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image11.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/ressources/project10-image12.jpg"
+        },
         {
           "type": "video",
           "url": "/assets/ressources/project1-video.mp4"
         }
       ],
+
       "description": "Description du projet 1...",
       "location": "Lieu du projet 1",
       "date": "Date du projet 1"
@@ -324,66 +352,6 @@
       ],
       "description": "Description du projet 9...",
       "location": "Valbonne",
-      "Superficie": ""
-    },
-    {
-      "id": 10,
-      "title": "Grasse",
-      "backgroundImage": "/assets/ressources/project10-image9.jpg",
-      "thumbnail": "/assets/ressources/project10-image9.jpg",
-      "category": "Architecture d'intérieur",
-      "media": [
-        {
-          "type": "image",
-          "url": "/assets/ressources/project10-image1.jpg"
-        },
-        {
-          "type": "image",
-          "url": "/assets/ressources/project10-image2.jpg"
-        },
-        {
-          "type": "image",
-          "url": "/assets/ressources/project10-image3.jpg"
-        },
-        {
-          "type": "image",
-          "url": "/assets/ressources/project10-image4.jpg"
-        },
-        {
-          "type": "image",
-          "url": "/assets/ressources/project10-image5.jpg"
-        },
-        {
-          "type": "image",
-          "url": "/assets/ressources/project10-image6.jpg"
-        },
-        {
-          "type": "image",
-          "url": "/assets/ressources/project10-image7.jpg"
-        },
-        {
-          "type": "image",
-          "url": "/assets/ressources/project10-image8.jpg"
-        },
-        {
-          "type": "image",
-          "url": "/assets/ressources/project10-image9.jpg"
-        },
-        {
-          "type": "image",
-          "url": "/assets/ressources/project10-image10.jpg"
-        },
-        {
-          "type": "image",
-          "url": "/assets/ressources/project10-image11.jpg"
-        },
-        {
-          "type": "image",
-          "url": "/assets/ressources/project10-image12.jpg"
-        }
-      ],
-      "description": "Description du projet 10...",
-      "location": "Grasse",
       "Superficie": ""
     }
   ]

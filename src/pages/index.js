@@ -25,9 +25,13 @@ export default function Home(props) {
 
   // Diaporama Background
   const backgroundImages = [
-    'assets/img/backgroundHome/img0.jpeg',
-    'assets/img/backgroundHome/img1.jpeg',
-    'assets/img/backgroundHome/img2.jpeg',
+    // 'assets/img/backgroundHome/img0.jpeg',
+    'assets/img/backgroundHome/img5.jpg',
+    'assets/img/backgroundHome/img4.jpg',
+    // 'assets/img/backgroundHome/img1.jpeg',
+    'assets/img/backgroundHome/img6.jpg',
+    'assets/img/backgroundHome/img7.jpg',
+    // 'assets/img/backgroundHome/img2.jpeg',
     'assets/img/backgroundHome/img3.jpeg',
     // Ajoutez d'autres URL d'images ici
   ];

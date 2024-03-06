@@ -35,7 +35,7 @@ const MapComponent = ({ position }) => {
                 attribution="&copy; OpenStreetMap contributors"
             />
             <Marker position={position} >
-                <Popup>Vous êtes ici !</Popup>
+                <Popup>Côté Design</Popup>
             </Marker>
         </MapContainer>
     );

@@ -120,13 +120,23 @@ to {
     width: 60%;
   }
   .containerPrezImg {
-    width: 40%;
-    /* padding: 20px; */
-  }
-  .containerPrezImg {
+    margin-top: 20vh;
     display: flex;
     justify-content: center; /* Centrer horizontalement l'image */
+    height: 600px;
+    /* clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%); */
+    width: 40%;
+    object-fit: contain;
+    /* padding: 20px; */
   }
+  .prezImg{
+    /* width: 80%; */
+    /* max-width: 600px; 
+    min-width: 300px;  */
+    object-fit: contain;
+    border-radius: 50%;
+  }
+
   .prezText{
     display: flex;
     justify-content: center;
@@ -139,16 +149,6 @@ to {
     font-size: 35px;
     letter-spacing: 0,04em;
     color: #261a0f;
-  }
-  .prezImg{
-    width: 80%;
-    /* padding: 50px; */
-    /* padding-right: 25%; */
-    max-width: 600px; /* Limiter la largeur de l'image pour les grands écrans */
-    min-width: 300px; /* Ajout d'une largeur minimale pour les petits écrans */
-    object-fit: cover; /* Empêcher l'image d'être plus petite que le texte */
-  
-    /* object-fit: contain; */
   }
   .prezContent{
     
@@ -172,18 +172,17 @@ to {
   }
   
   /* Responsive */
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .prezText, .containerPrezImg {
       width: 100%;
-      padding: 20px; /* Ajout d'un espace autour des éléments */
-      box-sizing: border-box; /* Inclure les espaces dans la largeur totale */
+      padding: 20px; 
+      box-sizing: border-box;
       margin: auto;
       /* padding: 20px; */
     }
     .prezText{
       
       justify-content: center;
-      /* align-items: center; */
       flex-direction: column;
       margin-bottom: 50px;
     }
@@ -211,9 +210,18 @@ to {
   }
     @media (max-width: 480px) {
       .prezSection{
-        padding: 2px;
+        padding: 20px 0;
+        margin: 40px auto;
       }
-      .prezText, .containerPrezImg {
+      .containerPrezImg {
+        margin-top: 20vh;
+        height: auto;
+        /* clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%); */
+        object-fit: contain;
+        /* padding: 20px; */
+      }
+      /* .prezText, .containerPrezImg { */
+      .prezText {
         width: 100%;
         padding: 10px 2px; /* Ajout d'un espace autour des éléments */
         box-sizing: border-box; /* Inclure les espaces dans la largeur totale */
@@ -231,6 +239,7 @@ to {
       .prezImg{
         width: 100%;
         margin-bottom: 10px;
+        border-radius: 2px;
       }
       .prezSection button{
         font-size: 18px;

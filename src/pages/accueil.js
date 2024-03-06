@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import prezImage from '../../public/assets/img/accueil/facade-angle.png'
+import prezImage from '../../public/assets/img/accueil/agence-accueil.png'
 // import videoTheme from '../../public/assets/video/accueilDemo.mp4'
 import buttonExploreDown from '../../public/assets/icones/icon-explore-down.png'
 import styles from '../styles/Accueil.module.css'
@@ -51,7 +51,7 @@ export default function accueil(props) {
         {/* Section presentation  */}
         <section className={styles.prezSection}>
           <div className={styles.containerPrezImg}>
-            <Image className={styles.prezImg} src={prezImage} alt='présentation illustration' />
+            <Image className={styles.prezImg} src={prezImage} height={500} alt='présentation illustration' />
           </div>
           <div className={styles.prezText}>
             <h2 className={styles.prezContent}>{t("accueil.prezSectionTextH2")}</h2>

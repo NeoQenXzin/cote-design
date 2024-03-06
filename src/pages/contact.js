@@ -205,7 +205,7 @@ export default function Contact() {
 
             {isClient && (
                 <div className={style.containerMap} style={{ height: '400px', display: 'inline-flex', justifyContent: 'center', margin: '0 auto', maxWidth: '700px', width: '50%' }}>
-                    <MapComponent position={[43.614213, 7.047299]} />
+                    <MapComponent position={[43.64116359228371, 7.007752504539933]} />
                 </div>
             )}
 
